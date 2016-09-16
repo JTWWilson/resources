@@ -11,10 +11,8 @@ GCSE Computer Science Theory Cribsheet
 global variables can be accessed from *any point* in a program.
  - For example:
 
-    OUTPUT "Here are the even numbers up to 100" 
-
-    
-	<code>FOR i <-- 1 TO 100 
+    <code>OUTPUT "Here are the even numbers up to 100" 
+     FOR i <-- 1 TO 100 
      IF i MOD 2 = 0 
      OUTPUT i 
      ENDIF 
