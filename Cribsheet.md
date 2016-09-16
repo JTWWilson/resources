@@ -11,17 +11,26 @@ GCSE Computer Science Theory Cribsheet
 global variables can be accessed from *any point* in a program.
  - For example:
 
-    <code>OUTPUT "Here are the even numbers up to 100" 
-     FOR i <-- 1 TO 100 
-     IF i MOD 2 = 0 
-     OUTPUT i 
-     ENDIF 
-     ENDFOR 
-     OUTPUT "Finished"</code>
+```
+OUTPUT "Here are the even numbers up to 100" 
+    
+FOR i <-- 1 TO 100 
+     
+IF i MOD 2 = 0 
+     
+OUTPUT i 
+     
+ENDIF 
+     
+ENDFOR 
+     
+OUTPUT "Finished"
+```
  
-	The variable **i** has scope between **lines 2 and 6**.
-	If a programmer were to try and use the variable before line 2 or after line 6, there would be a run-time error.
- - A variable has **global** scope if it can be accessed from anywhere in a project.
+The variable **i** has scope between **lines 2 and 6**.
+If a programmer were to try and use the variable before line 2 or after line 6, there would be a run-time error.
+ 
+- A variable has **global** scope if it can be accessed from anywhere in a project.
 Variables with global scope are usually considered bad practice in most languages, due to the increased risk of [name collisions](https://en.wikipedia.org/wiki/Name_collision).
 
 
