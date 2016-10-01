@@ -1,8 +1,7 @@
-GCSE Computer Science Theory Cribsheet
+Scope
 ---------
 
 
-#Scope
 ##Basics
 
  - Scope refers to the visibility of variables - in other words, in which parts of your program can see or use it. Normally, every variable has a **global** scope. Once defined, every part of your program can access that variable. However, it is very useful to be able to limit a variable's scope to a single function. In other words, the variable will have a limited **local** scope. This way, changes inside the function can't affect the main program in unexpected ways
@@ -103,26 +102,4 @@ What is the scope of totalCost?
 What is the scope of total?
 
 #####2f 
-Why would it necessary for a variable to have limited scope ?
-
-
-####Answers
-
-#####To be added
-
-#The CPU
-
-##Basics
-
-####Computer System
-**Definition**: *Hardware and software working together to create a working solution*
-
-####PSU
-**Definition**: *Power supply to convert main AC to DC voltage for the comupter*
-
-####Motherboard
-**Definition**: *The circuit-board to which all other core components are connected*
-
-####CPU
-**Definition**: *A chip responsible for performing calculations These perform instructions at a particular clock-frequency (measured in GHz) which determines how fast they can process data.*
-Multi-core machines can perform tasks simultaneously where this is desired. 
+Why would it necessary for a variable to have limited scope?
