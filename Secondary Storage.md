@@ -51,6 +51,11 @@ Optical storage discs contain dents and flat spots. A laser shone on the disc wi
 ### Solid-State Storage
 
 Solid-state discs contain billions of transistors arranged to make memory cells. The cells can be set to allow current to flow - representing a 1<sub>2</sub> - or not to flow - representing a 0<sub>2</sub>. By detecting if current is flowing or not flowing through a particular cell, the 1 or 0 can be read.
+- It takes about 10-15ms for a hard disk drive to locate and read a sector; an SSD does this in 1ms
+- Memory cells that are grouped together make a *page* about 4kB) and pages are then grouped together into *blocks* (usually 128 pages). You write page by page, but can only erase book by book (slowing down the process slightly)
+- NAND flash memory can't overwrite existing data like hard drives, but have to wait until you want to save something new, *then* it deletes the older data, in a process called *garbage collection*.
+- This process causes **amplification** - the effect of having to read and write more data than is actually needed; as a result, SSDs become slower to use, as they fill up over time.
+- **Write Endurance** is also a side-effect of the memory cells; every time you save somthing, the resisitance increases slightly, eventually they sont working.
 
 | Advantages | Disadvantages |
 | ---------- | ------------- |
