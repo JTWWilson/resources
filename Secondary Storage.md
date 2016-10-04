@@ -18,7 +18,12 @@ Secondary storage sizes are measured in bytes and multiples thereof:
 
 ## Basics
 
-Unlike RAM, secondary storage is a more permanent way of storing data. Secondary storage can be either internal - hard drives - or perhaps external - USB memory stick.
+- Unlike RAM, secondary storage is a more permanent way of storing data. 
+- Secondary storage can be either internal - hard drives - or external - USB memory stick.
+- Computer programs need to be stored in a way that they can be reloaded when the computer is turned back on.
+- The user may wish to move programs from the computer 
+- The user may need to back up data against failre fire or thempt
+
 
 ## Disk Types
 
