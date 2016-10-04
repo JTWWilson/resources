@@ -45,9 +45,9 @@ Cache memory is much faster than RAM.
 In general there are three levels of CPU cache.  
 Cache memory holds the most regularly accessed data or instuctions so that they're more quickly availiable, increasing a computer's performance.  
 
-- **L1** Cache is built into the processor, with a typical size of 64Kb. This cache is small but exceptionally fast.
-- **L2** Cache was originally separate to the CPU, but in modern computers it is integrated. L2 Cache is slower than L1, but generally larger in size - up to 2Mb.
-- **L3** Cache is memory that is situated on the motherboard. It is slower than the others but has a larger size - up to 8Mb.
+- **L1** 1-3ns Cache is built into the processor, with a typical size of 64Kb. This cache is small but exceptionally fast.
+- **L2** 3-10ns Cache was originally separate to the CPU, but in modern computers it is integrated. L2 Cache is slower than L1, but generally larger in size - up to 2Mb.
+- **L3** 10-20nsCache is memory that is situated on the motherboard. It is slower than the others but has a larger size - up to 8Mb.
 - There are three principles involved in deciding which data are stored in Cache.
   - **Temporal locality** - CPU has accessed some data and is likely to need the same data again soon.
   - **Spatial locality** - CPU has accessed some data and is likely to need data stored close by.
