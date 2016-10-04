@@ -1,4 +1,4 @@
-The Software Development Life Cycle
+The Software Development Life Cycle and Prototyping
 ---------------------------------------------
 
 ## Overview
@@ -76,3 +76,13 @@ Similarly to the waterfall model, the V-shaped model can only continue onto the 
 | :--------- | :------------ |
 | Testing is planned before the software is written, saving a lot of time | Very rigid and has little flexibility |
 | Example of proactive defect tracking, where defects are found early on | If any changes happen midway, then the test documents and the requirement documents have to be updated as well |
+
+## Prototyping
+
+A prototype is an early model or release of software built to test a concept or to act as something to be replicated or learned from. They typically allow a customer to evaluate a product or feature of a proposed software solution, rather than relying on interpretations of designs.
+
+| Advantages | Disadvantages |
+| :--------- | :------------ |
+| Prototypes help evaluate whether the developed software matches the specification | The prototype may be perfect, but are unable to be scaled into a full solution |
+| They allow the client to provide feedback on software features, even if the full solution is incomplete | Prototyping can be excessively long if it is not done correctly - it should be quick to be effective |
+| They asist in producing a product that more closely matches the client's needs. | |
