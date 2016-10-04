@@ -1,3 +1,4 @@
+
 Memory
 --------
 
@@ -24,11 +25,14 @@ The main set of instructions stored on ROM is the **BIOS**.
 BIOS stands for **Basic Input/Output System**.
 The BIOS provides instructions for the processor allowing it to interact with the Hard Disk and therefore boot the Operating System.
 Without the BIOS, the Operating System could not be booted.
+Needs to be *non-volatile* as it would otherwise be lost
 
 
 ####Volatile storage 
-#####E.g. <b>R</b>andom <b>A</b>ccess <b>M</b>emory
+#####E.g. <b>R</b>andom <b>A</b>ccess <b>M</b>emory, CPU cache
 ![RAM](https://panel.cinfu.com/images/kb/ram.jpg)
+
+- Loses all of its content when it is turned off
 - It cannot be used to reliably store information, so it is used by the system to temporarily hold information. 
 - Volatile memory is typically thousands of times faster than most non-volatile storage. Faster is better as it prevents the creation of a bottleneck as processers get faster and faster.
 - Volatile memory is quite expensive per unit so typical capacities of volatile memory tend to be lower; from MBs to a few GBs.
@@ -36,8 +40,10 @@ Without the BIOS, the Operating System could not be booted.
 
 ####Cache Memory
 
-Cache is required because processors are so fast, that if they had to retrieve all data and instructions from RAM, they would spend a long time waiting. Cache memory is much faster than RAM
-In general there are three levels of CPU cache.
+Cache is required because processors are so fast, that if they had to retrieve all data and instructions from RAM, they would spend a long time waiting.   
+Cache memory is much faster than RAM.  
+In general there are three levels of CPU cache.  
+Cache memory holds the most regularly accessed data or instuctions so that they're more quickly availiable, increasing a computer's performance.  
 
 - **L1** Cache is built into the processor, with a typical size of 64Kb. This cache is small but exceptionally fast.
 - **L2** Cache was originally separate to the CPU, but in modern computers it is integrated. L2 Cache is slower than L1, but generally larger in size - up to 2Mb.
@@ -81,6 +87,7 @@ Virtual memory is a common part of most operating systems on desktop computers. 
 - If there were no such thing as virtual memory, your computer would have to say, "*Sorry, you cannot load any more applications. Please close an application to load a new one.*" 
 - With **virtual memory**, the computer can look for areas of RAM that have not been used recently and copy them onto the hard disk. 
 - Because hard-disk space is so much cheaper than RAM chips, virtual memory also provides a nice economic benefit.
+- However, hard-disks are much slower to react than RAM (milliseconds rather than naoseconds) 
 
 ####Hard Disks
 
