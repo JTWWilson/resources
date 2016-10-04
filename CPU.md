@@ -12,8 +12,11 @@ A CPU is generally made up of two components
 
 ####A CPU works in 4 basic stages: 
 **Fetch** - Instructions are fetched from the program in memory.
+
 **Decode** - Instructions are broken up for assignment to parts of the CPU
+
 **Execute** - Calculations and Logical operations are performed (such as addition)
+
 **Writeback** - Results of calculations are written back to memory.
 
 
