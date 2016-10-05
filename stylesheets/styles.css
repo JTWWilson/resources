@@ -795,9 +795,9 @@ section #title {
 section #title h1 {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 40px;
-  text-align: center;
-  line-height: 36px;
+  font-size: 80px;
+  text-align: right;
+  line-height: 60px;
 }
 section #title p {
   color: #d7cfbe;
