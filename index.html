@@ -39,55 +39,160 @@
         </div>
 
         <h2>
-<a id="the-cpu" class="anchor" href="#the-cpu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The CPU</h2>
+<a id="memory" class="anchor" href="#memory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Memory</h2>
 
 <h2>
 <a id="basics" class="anchor" href="#basics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basics</h2>
 
-<p>A CPU is an integrated circuit that is responsible for performing arithmetic, logical and I/O operations.<br>
-CPUs perform these operations as instructed by a computer program.<br>
-A CPU is generally made up of two components  </p>
+<p>In modern computers, the term Read Only Memory is somewhat of a misnomer.
+ROM refers to a class of memory where the data is <em>hardwired and therefore can not be changed</em>. In reality, modern ROM can be altered, but not within the normal operations of the computer system.
+ROM is classed as <em>non-volatile</em> memory.</p>
+
+<h4>
+<a id="in-any-computer-system-there-are-two-types-of-storage-the-volatile-storage-and-the-non-volatile-storage" class="anchor" href="#in-any-computer-system-there-are-two-types-of-storage-the-volatile-storage-and-the-non-volatile-storage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In any computer system, there are two types of storage, the <strong>volatile storage</strong> and the non-<strong>volatile storage</strong>.</h4>
+
+<h5>
+<a id="the-main-difference-between-volatile-and-non-volatile-storage-is-what-happens-when-you-turn-off-the-power-with-non-volatile-storage-as-long-as-the-data-has-already-been-written-it-will-remain-for-a-considerable-amount-of-time-typically-hundreds-of-years-however-volatile-memory-needs-constant-power-in-order-to-retain-the-stored-data-once-the-power-goes-out-the-data-is-lost-almost-instantly" class="anchor" href="#the-main-difference-between-volatile-and-non-volatile-storage-is-what-happens-when-you-turn-off-the-power-with-non-volatile-storage-as-long-as-the-data-has-already-been-written-it-will-remain-for-a-considerable-amount-of-time-typically-hundreds-of-years-however-volatile-memory-needs-constant-power-in-order-to-retain-the-stored-data-once-the-power-goes-out-the-data-is-lost-almost-instantly" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The main difference between volatile and non-volatile storage is what happens when you turn off the power. With non-volatile storage, as long as the data has already been written, it will remain for a considerable amount of time; typically hundreds of years. However, volatile memory needs constant power in order to retain the stored data. Once the power goes out, the data is lost almost instantly.</h5>
+
+<h3>
+<a id="uses" class="anchor" href="#uses" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Uses</h3>
+
+<h4>
+<a id="non-volatile-storage" class="anchor" href="#non-volatile-storage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Non-volatile storage</h4>
+
+<h5>
+<a id="eg-read-only-memory" class="anchor" href="#eg-read-only-memory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>E.g. <b>R</b>ead <b>O</b>nly <b>M</b>emory</h5>
+
+<p><img src="http://amigakit.leamancomputing.com/catalog/images/kickstart-rom.jpg" alt="ROM"></p>
 
 <ul>
-<li>An arithmetic logic unit (ALU)<br>
-</li>
-<li>A control unit (CU)</li>
+<li>Ideal for storing data for long term storage. </li>
+<li>Non-volatile storage is can now reach a few TB for hard drives and it is in the range of GB for most solid state drives.</li>
+<li>Upgrading non-volatile storage gives you more space to save files. So you can install more applications and games while still having space for movies, music, and even large back-up </li>
 </ul>
 
 <h4>
-<a id="a-cpu-works-in-4-basic-stages" class="anchor" href="#a-cpu-works-in-4-basic-stages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A CPU works in 4 basic stages:</h4>
+<a id="rom" class="anchor" href="#rom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ROM</h4>
 
-<p><strong>Fetch</strong> - Instructions are fetched from the program in memory.</p>
-
-<p><strong>Decode</strong> - Instructions are broken up for assignment to parts of the CPU</p>
-
-<p><strong>Execute</strong> - Calculations and Logical operations are performed (such as addition)</p>
-
-<p><strong>Writeback</strong> - Results of calculations are written back to memory.</p>
-
-<h2>
-<a id="exam-definitions" class="anchor" href="#exam-definitions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Exam Definitions</h2>
+<p>The main set of instructions stored on ROM is the <strong>BIOS</strong>.
+BIOS stands for <strong>Basic Input/Output System</strong>.
+The BIOS provides instructions for the processor allowing it to interact with the Hard Disk and therefore boot the Operating System.
+Without the BIOS, the Operating System could not be booted.
+Needs to be <em>non-volatile</em> as it would otherwise be lost</p>
 
 <h4>
-<a id="computer-system" class="anchor" href="#computer-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Computer System</h4>
+<a id="volatile-storage" class="anchor" href="#volatile-storage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Volatile storage</h4>
 
-<p><strong>Definition</strong>: <em>Hardware and software working together to create a working solution</em></p>
+<h5>
+<a id="eg-random-access-memory-cpu-cache" class="anchor" href="#eg-random-access-memory-cpu-cache" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>E.g. <b>R</b>andom <b>A</b>ccess <b>M</b>emory, CPU cache</h5>
+
+<p><img src="https://panel.cinfu.com/images/kb/ram.jpg" alt="RAM"></p>
+
+<ul>
+<li>Loses all of its content when it is turned off</li>
+<li>It cannot be used to reliably store information, so it is used by the system to temporarily hold information. </li>
+<li>Volatile memory is typically thousands of times faster than most non-volatile storage. Faster is better as it prevents the creation of a bottleneck as processers get faster and faster.</li>
+<li>Volatile memory is quite expensive per unit so typical capacities of volatile memory tend to be lower; from MBs to a few GBs.</li>
+<li>Upgrading volatile memory should give you enhanced system performance, especially when under heavy loads or doing multitasking as the CPU can get information from its temporary storage quicker</li>
+</ul>
 
 <h4>
-<a id="psu" class="anchor" href="#psu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PSU</h4>
+<a id="cache-memory" class="anchor" href="#cache-memory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cache Memory</h4>
 
-<p><strong>Definition</strong>: <em>Power supply to convert main AC to DC voltage for the computer</em></p>
+<p>Cache is required because processors are so fast, that if they had to retrieve all data and instructions from RAM, they would spend a long time waiting.<br>
+Cache memory is much faster than RAM.<br>
+In general, there are three levels of CPU cache.<br>
+Cache memory holds the most regularly accessed data or instructions so that they're more quickly available, increasing a computer's performance.  </p>
+
+<ul>
+<li>
+<strong>L1</strong> Cache is built into the processor, with a typical size of 64Kb. This cache is small but exceptionally fast. The average access time is between 1 and 3 nanoseconds.</li>
+<li>
+<strong>L2</strong> Cache was originally separate to the CPU, but in modern computers, it is integrated. L2 Cache is slower than L1, but generally larger in size - up to 2Mb. The average access time is between 3 and 10 nanoseconds.</li>
+<li>
+<strong>L3</strong> Cache is memory that is situated on the motherboard. It is slower than the others but has a larger size - up to 8Mb. The average access time is between 10 and 20 nanoseconds.</li>
+<li>There are three principles involved in deciding which data are stored in Cache.
+
+<ul>
+<li>
+<strong>Temporal locality</strong> - CPU has accessed some data and is likely to need the same data again soon.</li>
+<li>
+<strong>Spatial locality</strong> - CPU has accessed some data and is likely to need data stored close by.</li>
+<li>
+<strong>Sequential locality</strong> - CPU has accessed some data and is likely that it will need data stored in the next location.</li>
+</ul>
+</li>
+</ul>
 
 <h4>
-<a id="motherboard" class="anchor" href="#motherboard" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motherboard</h4>
+<a id="static-ram-and-dram" class="anchor" href="#static-ram-and-dram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Static RAM and DRAM</h4>
 
-<p><strong>Definition</strong>: <em>The circuit board to which all other core components are connected</em></p>
+<p>(<em><b>D</b>ynamic</em> <strong>RAM</strong>)</p>
+
+<ul>
+<li>Static RAM is made up of flip-flop memory cells.</li>
+<li>A single flip-flop for a memory cell takes four or six transistors along with some wiring but never has to be refreshed. </li>
+<li>This makes static RAM significantly faster than dynamic RAM. </li>
+<li>However, because it has more parts, a static memory cell takes up a lot more space on a chip than a dynamic memory cell. </li>
+<li>Therefore, you get less memory per chip, and that makes static RAM a lot more expensive.</li>
+<li>The quick, rapid response Static RAM is used for the CPU's speed-sensitive cache while dynamic RAM forms the larger system RAM space as it is cheaper.</li>
+</ul>
 
 <h4>
-<a id="cpu" class="anchor" href="#cpu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CPU</h4>
+<a id="pc-buses" class="anchor" href="#pc-buses" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PC Buses</h4>
 
-<p><strong>Definition</strong>: <em>A chip responsible for performing calculations These perform instructions at a particular clock frequency (measured in GHz) which determines how fast they can process data.</em>
-Multi-core machines can perform tasks simultaneously where this is desired. </p>
+<ul>
+<li>A bus is basically the cables that connect different parts of a PC to each other.</li>
+<li>The size of a bus, known as its width, is important because it determines how much data can be transmitted at one time. The bus size actually indicates the number of wires in the bus. 
+
+<ul>
+<li>For example, a 32-bit bus has 32 wires or connectors that transmit 32 bits simultaneously. It would be considered "32-bits wide." </li>
+</ul>
+</li>
+</ul>
+
+<h4>
+<a id="ram-latency" class="anchor" href="#ram-latency" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RAM Latency</h4>
+
+<ul>
+<li>An <em>access time</em> check tells us how many clock cycles the memory module will delay in returning data requested by the CPU. 
+
+<ul>
+<li>A memory module with a CL 9 will delay nine clock cycles to deliver a requested data, whereas a memory module with a CL 7 will delay seven clock cycles to deliver it. </li>
+<li>While both modules may run at the same clock rate, the second one will be faster, as it will deliver data sooner than the first one. </li>
+</ul>
+</li>
+<li>This issue is known as “<strong>latency</strong>.” </li>
+</ul>
+
+<h4>
+<a id="virtual-memory" class="anchor" href="#virtual-memory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Virtual Memory</h4>
+
+<p>Virtual memory is a common part of most operating systems on desktop computers. It has become so common because it provides a big benefit for users at a very low cost.</p>
+
+<ul>
+<li>Most computers today have something like 64 or 128 megabytes of RAM (random-access memory) available for use by the CPU (central processing unit). </li>
+<li>Often, that amount of RAM is not enough to run all of the programs that most users expect to run at once. For example, if you load the Windows operating system, an e-mail program, a Web browser and word processor into RAM simultaneously, 64 megabytes is not enough to hold it all. </li>
+<li>If there were no such thing as virtual memory, your computer would have to say, "<em>Sorry, you cannot load any more applications. Please close an application to load a new one.</em>" </li>
+<li>With <strong>virtual memory</strong>, the computer can look for areas of RAM that have not been used recently and copy them onto the hard disk. </li>
+<li>Because hard-disk space is so much cheaper than RAM chips, virtual memory also provides a nice economic benefit.</li>
+<li>However, hard-disks are much slower to react than RAM (milliseconds rather than nanoseconds) </li>
+</ul>
+
+<h4>
+<a id="hard-disks" class="anchor" href="#hard-disks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hard Disks</h4>
+
+<ul>
+<li>Hard disks are a class of non-volatile memory.</li>
+<li>In most computers, the HD is used to store the operating system, applications and user data.</li>
+<li>Hard disks are mechanical in nature, and this is one of the reasons they are so slow.</li>
+<li>Hard disks can store vast quantities of data, and 2+ Tb drives are not unusual.</li>
+</ul>
+
+<h4>
+<a id="all-of-these-storage-methods-can-be-summed-up-by-the-following" class="anchor" href="#all-of-these-storage-methods-can-be-summed-up-by-the-following" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>All of these storage methods can be summed up by the following:</h4>
+
+<p><img src="https://bournetocode.com/projects/GCSE_Computing_Fundamentals/pages/img/computer-memory-pyramid.gif" alt="Storage Hierarchy"></p>
       </section>
 
     </div>
