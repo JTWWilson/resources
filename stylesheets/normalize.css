@@ -108,8 +108,8 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
 h1 {
-  font-size: 10em;
-  margin: 20em 30;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 h2 {
