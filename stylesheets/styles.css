@@ -178,17 +178,17 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
 h1 {
-  font-size: 30em;
-  margin: 100em 100;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 h2 {
-  font-size: 2em;
-  margin: 0.75em 0;
+  font-size: 1.5em;
+  margin: 0.83em 0;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.17em;
   margin: 1em 0;
 }
 
@@ -795,9 +795,9 @@ section #title {
 section #title h1 {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 80px;
-  text-align: right;
-  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 36px;
 }
 section #title p {
   color: #d7cfbe;
