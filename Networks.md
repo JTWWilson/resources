@@ -31,3 +31,25 @@ Networks
  - **Star**: Nodes all connect to a central hub or switch. Used in most home broadband 
 	  + Easy to add further nodes
  
+## P2P or Client-Server
+
+ - A **P2P** or *peer-to-peer* network allows each host or application to act as both a client and a server.
+
+| Advantages | Disadvantages |
+| ---------- | ------------- |
+| Easy to install. | Data recovery is difficult as there is no central database. |
+| All resources can be shared between all of the 'peers'. | Malware and viruses are easily transmitted between systems. |
+
+
+ - A **client-server** network is where multiple clients can access resources from a single server.
+
+| Advantages | Disadvantages |
+| ---------- | ------------- |
+| All files are stored in a central location. | The server is expensive to purchase. |
+| Backups and security are controlled centrally for all clients. | Specialist network managers are needed to operate the network system. |
+| Users can access shared data which is centrally controlled. | If any part of the network fails, lots of disruption can occur. |
+
+## Handshaking
+
+**Handshaking** is the exchange of information between two systems and the resulting 
+agreement about which protocol to use for the connection. In handshaking, the client requests access to the server, the server grants this access and the protocols for the connection are agreed. Once this process is complete, the data transfer and exchange can begin.
