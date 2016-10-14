@@ -77,4 +77,4 @@ For example, if we had a bag filled with scrabble tiles, and we wanted to find o
 	  ENDFOR
 	ENDFOR
 
-- This algorithm sorts by taking each element and comparing them to all those to the left of it until it finds an element which is smaller than itself; it 
+- This algorithm sorts by taking each element and comparing them to all those to the left of it until it finds an element which is smaller than itself; it then swaps with that element.
