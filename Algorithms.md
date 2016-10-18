@@ -81,6 +81,28 @@ For example, if we had a bag filled with scrabble tiles, and we wanted to find o
 
 ## Examples
 
+###Example 1
+Write an algorithm using pseudocode or a flowchart that will calculate the amount of fuel a plane needs to make a complete journey. The algorithm must:
+
+- Ask the user how many miles the journey will be.
+- Ensure the answer is greater than 0
+- Multiply the distance to be travelled by 20, to find the minimum number of litres required.
+- Add 20% to the volume to handle holding patterns while waiting to land and detours.
+- Report the volume required back to the user.
+
+####Solution
+
+```  pseudocode
+distance <- 0
+REPEAT
+  distance <- INPUT "How long will the journey be?"
+UNTIL distance > 0
+  litres <- distance * 20
+  litres <- litres * 1.2
+OUTPUT litres 
+```
+
+
 ### Example 2
 
 Write an algorithm using pseudocode or a flowchart that will calculate if a person has a healthy weight. The algorithm must:
@@ -159,4 +181,56 @@ WHILE counter <= 3
 ENDWHILE
 
 OUTPUT resistance
+```
+
+
+###Example 4
+
+
+Write an algorithm using pseudocode or a flowchart that will correctly identify a hydrocarbon:
+
+- Ask the user how many carbons are in the hydrocarbon and only accept numbers between 1 and 8
+- Ask the user how many hydrogens are in the hydrocarbon and only accept numbers between the number of carbons * 2, the (number of carbons * 2) + 2 or the (number of carbons * 2) -2.
+- The number of carbons indicates the prefix of the hydrocarbon name, according to the following table.
+
+| Carbons | Prefix |
+|------------|---------|
+|1 	|Meth|
+|2 	|Eth|
+|3 	|Prop|
+|4 	|But|
+|5 	|Pent|
+|6 	|Hex|
+|7 	|Hept|
+|8 	|Oct|
+
+
+- The suffix is decided by the ratio of carbon to hydrogen.
+
+|Ratio |Suffix|
+|-------|-------|
+|C<sub>n</sub>H<sub>2n+2</sub> |	ane|
+|C<sub>n</sub>H<sub>2n</sub> |	ene|
+|C<sub>n</sub>H<sub>2n-2</sub> |	yne|
+
+ 
+ - So C<sub>3</sub>H<sub>8</sub> would be Propane, C<sub>3</sub>H<sub>6</sub> would be Propene and C<sub>3</sub>H<sub>4</sub> would be Propyne
+ - The name of the hydrocarbon should be reported back to the user.
+
+
+####Solution
+
+```  pseudocode
+prefixes <- ["Meth", "Eth", "Prop", "But", "Pent", "Hex", "Hept", "Oct"]
+REPEAT
+  carbons <- INPUT "How many carbon atoms do you have?"
+UNTIL carbons > 1 AND carbons < 8
+hydrogens <- INPUT "How many hydrogen atoms do you have?"
+CASE hydrogens OF
+  carbons * 2 + 2: name <- prefixes[carbons] + "ane"
+  carbons * 2: name <- prefixes[carbons] + "ene"
+  carbons * 2 - 2: name <- prefixes[carbons] + "yne"
+ENDCASE
+
+OUTPUT name
 ```
