@@ -78,3 +78,80 @@ For example, if we had a bag filled with scrabble tiles, and we wanted to find o
 	ENDFOR
 
 - This algorithm sorts by taking each element and comparing them to all those to the left of it until it finds an element which is smaller than itself; it then swaps with that element.
+
+## Examples
+
+### Example 2
+
+Write an algorithm using pseudocode or a flowchart that will calculate if a person has a healthy weight. The algorithm must:
+
+ - Ask the user for their mass in kilograms.
+ - Ask the user for their height in metres.
+ - Ensure that both values are above 0
+ - Divide the mass by the height squared.
+ - If the BMI is between 18.5 and 25, it should report that they are of a healthy weight, otherwise it should report that they are underweight (lower) or overweight higher)
+
+#### Solutions
+``` pseudocode
+user_mass <- USERINPUT
+user_height <- USERINPUT
+WHILE user_mass <= 0 AND user_height <= 0
+  OUTPUT "height and mass must be >0"
+  user_mass <- USERINPUT
+  user_height <- USERINPUT
+ENDWHILE
+bmi <- user_mass / (user_height ^ 2)
+IF bmi < 25 AND bmi > 18.5 THEN
+  OUTPUT "healthy weight"
+ELSEIF bmi <= 18.5 THEN
+  OUTPUT "underweight"
+ELSE
+  OUTPUT "overweight"
+ENDIF
+```
+
+### Example 3
+
+
+
+Write an algorithm using pseudocode or a flowchart that will calculate the resistance of a resistor. The algorithm must:
+
+ - Ask the user for the colours of the first three bands on the resistor.
+ - If they don't enter a black, brown ,red, orange, yellow, green, blue, violet, grey or white it should ask them to enter a colour again.
+ - The first band should indicate the first digit of the resistance, with black being 0 up to white being 9.
+ - The second band should indicate the second digit of the resistance, with black being 0 up to white being 9.
+ - The third band should indicate the number of 0s to be added to the end of the first two digits, with black being 0 up to 9 being white.
+ - The resistance should be reported back to the user.
+
+#### Solutions
+
+``` pseudocode
+colours <- ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"]
+REPEAT
+  band_1 <- USERINPUT
+  band_2 <- USERINPUT
+  band_3 <- USERINPUT
+UNTIL band_1 IN colours AND band_1 IN colours AND band_1 IN colours
+
+counter = 1
+resistance = 0
+WHILE counter <= 3
+  IF counter = 1 THEN
+    FOR band_count <- 0 to 9
+      IF colours[band_count] = band_1 THEN
+        resistance = resistance + band_count
+        BREAK
+  ELSEIF counter = 2 THEN
+    FOR band_count <- 0 to 9
+      IF colours[band_count] = band_2 THEN
+        resistance = resistance + (band_count * 10)
+        BREAK
+  ELSE
+    FOR band_count <- 0 to 9
+      IF colours[band_count] = band_3 THEN
+        resistance = resistance * (10 ^ band_count)
+        BREAK
+  ENDIF
+ENDWHILE
+OUTPUT resistance
+```
