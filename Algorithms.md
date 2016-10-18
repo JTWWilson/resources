@@ -95,12 +95,15 @@ Write an algorithm using pseudocode or a flowchart that will calculate if a pers
 ``` pseudocode
 user_mass <- USERINPUT
 user_height <- USERINPUT
+
 WHILE user_mass <= 0 AND user_height <= 0
   OUTPUT "height and mass must be >0"
   user_mass <- USERINPUT
   user_height <- USERINPUT
 ENDWHILE
+
 bmi <- user_mass / (user_height ^ 2)
+
 IF bmi < 25 AND bmi > 18.5 THEN
   OUTPUT "healthy weight"
 ELSEIF bmi <= 18.5 THEN
@@ -127,6 +130,7 @@ Write an algorithm using pseudocode or a flowchart that will calculate the resis
 
 ``` pseudocode
 colours <- ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"]
+
 REPEAT
   band_1 <- USERINPUT
   band_2 <- USERINPUT
@@ -153,5 +157,6 @@ WHILE counter <= 3
         BREAK
   ENDIF
 ENDWHILE
+
 OUTPUT resistance
 ```
