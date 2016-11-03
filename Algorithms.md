@@ -97,8 +97,8 @@ distance <- 0
 REPEAT
   distance <- INPUT "How long will the journey be?"
 UNTIL distance > 0
-  litres <- distance * 20
-  litres <- litres * 1.2
+litres <- distance * 20
+litres <- litres * 1.2
 OUTPUT litres 
 ```
 
@@ -224,7 +224,7 @@ Write an algorithm using pseudocode or a flowchart that will correctly identify 
 prefixes <- ["Meth", "Eth", "Prop", "But", "Pent", "Hex", "Hept", "Oct"]
 REPEAT
   carbons <- INPUT "How many carbon atoms do you have?"
-UNTIL carbons > 1 AND carbons < 8
+UNTIL 1 <= carbons <= 8
 hydrogens <- INPUT "How many hydrogen atoms do you have?"
 CASE hydrogens OF
   carbons * 2 + 2: name <- prefixes[carbons] + "ane"
