@@ -89,7 +89,7 @@
  
 #testli li {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 5px solid #A30F0F;
 }
  
 #testli li:last-child {
@@ -98,7 +98,7 @@
  
 #testli li a {
   text-decoration: none;
-  color: #030;
+  color: #DBDBDB;
   display: block;
   width: 200px;
   -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
@@ -110,7 +110,6 @@
  
 #testli li a:hover {
   font-size: 30px;
-  background: #f6f6f6;
 }
 
 
