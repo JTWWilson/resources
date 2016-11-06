@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE-Computer-Science-Theory by fabcooldog</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/fabcooldog/GCSE-Computer-Science-Theory">View On GitHub</a></li>
+      <li class="downloads"><a href="https://fabcooldog.github.io/GCSE-Computer-Science-Theory/index.html">Home</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE-Computer-Science-Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Computer Science (4512/1) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+
+  <section>
+
+
+<h2 id="database-concepts">Database Concepts</h2>
+
+
+
+<h2 id="what-is-a-database">What is a database?</h2>
+
+<p>A <strong>database</strong> is a method of storing data in tables. The data contained within them is quick and easy to sort and search. Most databases will end with the <em>.db</em> extension.</p>
+
+
+
+<h2 id="flat-file-databases">Flat-file databases</h2>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Name</th>
+  <th align="left">Pets</th>
+  <th align="left">Key</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Bob</td>
+  <td align="left">Cat</td>
+  <td align="left">PR-001</td>
+</tr>
+<tr>
+  <td align="left">Bab</td>
+  <td align="left">Dog</td>
+  <td align="left">PR-002</td>
+</tr>
+<tr>
+  <td align="left">Bib</td>
+  <td align="left">Elephant</td>
+  <td align="left">PR-003</td>
+</tr>
+</tbody></table>
+
+
+<p>Above, we have a <strong>table</strong> - <em>a two-dimensional structure used to store data</em>. Each ‘box’ in the table is called a <strong>field</strong>, while each row tends to be called a <strong>record</strong>. Each <strong>column</strong> in our table must have a title (Name, Pets, Key).</p>
+
+<p>To prevent replication of data, i.e. to prevent Bob from appearing twice in the table, and to build inter-table relationships each record needs a unique identifier - we call this a <strong>primary key</strong>. No two records can share a primary key.</p>
+
+<p>There is a major problem with flat-file databases: say that Bob decided that he was going to get a pet hippopotamus for Christmas. However, there is no space on Bob’s record to add another pet. We could, of course, add another column to the table, however, our table would get rather large if Bib went and bought a farm. The solution to this is the <strong>relational database</strong></p>
+
+
+
+<h2 id="relational-databases">Relational databases</h2>
+
+<p>To take the same example from the previous section, we could solve the problem by having two tables: one table that links each name to a key, and another table that links the keys to pets. However, in the second table, we do not use the primary key from the first table as the primary key, as this allows us to use it multiple times:</p>
+
+<p>Table: PEOPLE</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Name</th>
+  <th align="left">Key</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Bob</td>
+  <td align="left">PR-001</td>
+</tr>
+<tr>
+  <td align="left">Bab</td>
+  <td align="left">PR-002</td>
+</tr>
+<tr>
+  <td align="left">Bib</td>
+  <td align="left">PR-003</td>
+</tr>
+</tbody></table>
+
+
+<p>Table: PETS</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Person</th>
+  <th align="left">Pet</th>
+  <th align="left">Key</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">PR-001</td>
+  <td align="left">Cat</td>
+  <td align="left">PT-001</td>
+</tr>
+<tr>
+  <td align="left">PR-001</td>
+  <td align="left">Hippopotamus</td>
+  <td align="left">PT-002</td>
+</tr>
+<tr>
+  <td align="left">PR-002</td>
+  <td align="left">Dog</td>
+  <td align="left">PT-003</td>
+</tr>
+<tr>
+  <td align="left">PR-003</td>
+  <td align="left">Elephant</td>
+  <td align="left">PT-004</td>
+</tr>
+</tbody></table>
+
+
+<p>Note that our primary (unique) key in PETS is PT-XXX. The Person column is called our <strong>foreign key</strong> as this links our two tables. For example, if we wanted to find all of Bob’s pets, we would look up Bob in PEOPLE to find his key, then we would look for that in PETS to find all of his pets.</p>
+
+<p>N.B. In SQL this would be:</p>
+
+
+
+<pre class="prettyprint"><code class="language-sql hljs "><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> PEOPLE.Name, PETS.Pet
+    <span class="hljs-keyword">FROM</span> PEOPLE, PETS
+    <span class="hljs-keyword">WHERE</span> PEOPLE.Name = <span class="hljs-string">'Bob'</span>
+    <span class="hljs-keyword">AND</span> PEOPLE.<span class="hljs-keyword">Key</span> = PETS.Person</span></code></pre>
+
+<p>This would return:</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">PEOPLE.Name</th>
+  <th align="left">PETS.Pet</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Bob</td>
+  <td align="left">Cat</td>
+</tr>
+<tr>
+  <td align="left">Bob</td>
+  <td align="left">Hippopotamus</td>
+</tr>
+</tbody></table>
+
+  </section>
+
+</html>
