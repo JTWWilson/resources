@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE-Computer-Science-Theory by fabcooldog</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/fabcooldog/GCSE-Computer-Science-Theory">View On GitHub</a></li>
+      <li class="downloads"><a href="https://fabcooldog.github.io/GCSE-Computer-Science-Theory/index.html">Home</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE-Computer-Science-Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Computer Science (4512/1) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+
+  <section>
+
+<h2 id="algorithms">Algorithms</h2>
+
+
+
+<h3 id="what-is-an-algorithm">What is an Algorithm?</h3>
+
+
+
+<h5 id="algorithms-are-computational-solutions-that-always-finish-and-return-an-answer">Algorithms are computational solutions that always finish and return an answer.</h5>
+
+<p>For example, if we had a bag filled with scrabble tiles, and we wanted to find out how many letters of each type there were:</p>
+
+<pre><code>Set count for each letter to 0
+Until the bag is empty
+    Take out a tile
+    Look at the letter
+    Add one to that letter's count
+</code></pre>
+
+<ul>
+<li>We usually use <em>pseudocode</em> to write algorithms - “<em>an informal description of the operations of a computer program or other algorithm</em>“. </li>
+<li>Pseudocode is useful as it can be read by any programmer, regardless of their language specialism.</li>
+<li>It uses the structural conventions of a normal programming language, but is intended <em>for human reading</em> rather than machine reading. </li>
+<li>Pseudocode typically omits details that are essential for machine understanding of the algorithm, such as variable declarations, system-specific code and some subroutines. </li>
+<li>It is augmented with natural language description details to add further explanation to the code.</li>
+<li>The purpose of using pseudocode is that it is easier for people to understand than conventional programming language code, and that it is an efficient and objective description of the key principles of an algorithm. </li>
+<li>In reality there is no formal syntax for pseudocode and computer scientists will use whatever notation they feel is best understood by the reader. </li>
+<li>Exam boards however don’t seem to understand this concept, and insist on a formal syntax. AQA’s pseudocode syntax is relatively basic and is detailed <a href="http://filestore.aqa.org.uk/subjects/AQA-GCSE-COMPSCI-W-TRB-PSEU.PDF">here</a></li>
+<li>The AQA Specification says that you should be able to:  <br>
+<ul><li>Understand that algorithms are computational solutions that always finish and return an answer</li>
+<li>Interpret simple algorithms to deduce their function be able to create algorithms to solve simple problems </li>
+<li>Detect and correct errors in simple algorithms.</li></ul></li>
+</ul>
+
+
+
+<h3 id="sorting-algorithms">Sorting Algorithms</h3>
+
+<ul>
+<li>Algorithms designed to order a range of numbers from smallest to largest.</li>
+<li>These are very commonly used example algorithms and are helpful to look at before exams:</li>
+<li>For visual demonstrations of each of the following algorithms, see <a href="https://visualgo.net/sorting">this site</a>, which steps through each line of pseudocode. </li>
+</ul>
+
+
+
+<h4 id="bubble-sort-algorithm">Bubble Sort Algorithm</h4>
+
+<pre><code>REPEAT
+  swapped &lt;- false
+  FOR i &lt;- 1 TO indexOfLastUnsortedElement
+    IF leftElement &gt; rightElement
+      swap(leftElement, rightElement)
+      swapped &lt;- true
+    ENDIF
+UNTIL swapped IS false
+</code></pre>
+
+<ul>
+<li>This algorithm sorts a list of numbers by comparing each element to its next in line and then swapping if the next element is smaller.</li>
+</ul>
+
+
+
+<h3 id="select-sort-algorithm">Select Sort Algorithm</h3>
+
+<pre><code>WHILE (numOfUnsortedElements - 1) != 0
+  set the first unsorted element as the minimum
+  FOR element IN unsorted elements
+    if element &lt; currentMinimum
+      element &lt;- currentMinimum
+  swap minimum with first unsorted position
+ENDWHILE
+</code></pre>
+
+<ul>
+<li>This algorithm sorts by finding the smallest item in the list and putting that first.</li>
+</ul>
+
+
+
+<h3 id="insert-sort-algorithm">Insert Sort Algorithm</h3>
+
+<pre><code>mark first element as sorted
+FOR element in unsorted elements
+  'extract' the element
+  FOR i = lastSortedIndex TO 0
+    IF currentSortedElement &gt; extractedElement THEN
+      move sorted element to the right by 1
+    ELSE
+     insert extracted element
+    ENDIF
+  ENDFOR
+ENDFOR
+</code></pre>
+
+<ul>
+<li>This algorithm sorts by taking each element and comparing them to all those to the left of it until it finds an element which is smaller than itself; it then swaps with that element.</li>
+</ul>
+
+
+
+<h2 id="examples">Examples</h2>
+
+
+
+<h3 id="example-1">Example 1</h3>
+
+<p>Write an algorithm using pseudocode or a flowchart that will calculate the amount of fuel a plane needs to make a complete journey. The algorithm must:</p>
+
+<ul>
+<li>Ask the user how many miles the journey will be.</li>
+<li>Ensure the answer is greater than 0</li>
+<li>Multiply the distance to be travelled by 20, to find the minimum number of litres required.</li>
+<li>Add 20% to the volume to handle holding patterns while waiting to land and detours.</li>
+<li>Report the volume required back to the user.</li>
+</ul>
+
+
+
+<h4 id="solution">Solution</h4>
+
+
+
+<pre class="prettyprint"><code class="language-pseudocode hljs rsl"><span class="hljs-built_in">distance</span> &lt;- <span class="hljs-number">0</span>
+REPEAT
+  <span class="hljs-built_in">distance</span> &lt;- INPUT <span class="hljs-string">"How long will the journey be?"</span>
+UNTIL <span class="hljs-built_in">distance</span> &gt; <span class="hljs-number">0</span>
+litres &lt;- <span class="hljs-built_in">distance</span> * <span class="hljs-number">20</span>
+litres &lt;- litres * <span class="hljs-number">1.2</span>
+OUTPUT litres </code></pre>
+
+
+
+<h3 id="example-2">Example 2</h3>
+
+<p>Write an algorithm using pseudocode or a flowchart that will calculate if a person has a healthy weight. The algorithm must:</p>
+
+<ul>
+<li>Ask the user for their mass in kilograms.</li>
+<li>Ask the user for their height in metres.</li>
+<li>Ensure that both values are above 0</li>
+<li>Divide the mass by the height squared.</li>
+<li>If the BMI is between 18.5 and 25, it should report that they are of a healthy weight, otherwise it should report that they are underweight (lower) or overweight higher)</li>
+</ul>
+
+
+
+<h4 id="solutions">Solutions</h4>
+
+
+
+<pre class="prettyprint"><code class="language-pseudocode hljs php">user_mass &lt;- USERINPUT
+user_height &lt;- USERINPUT
+
+<span class="hljs-keyword">WHILE</span> user_mass &lt;= <span class="hljs-number">0</span> <span class="hljs-keyword">AND</span> user_height &lt;= <span class="hljs-number">0</span>
+  OUTPUT <span class="hljs-string">"height and mass must be &gt;0"</span>
+  user_mass &lt;- USERINPUT
+  user_height &lt;- USERINPUT
+<span class="hljs-keyword">ENDWHILE</span>
+
+bmi &lt;- user_mass / (user_height ^ <span class="hljs-number">2</span>)
+
+<span class="hljs-keyword">IF</span> bmi &lt; <span class="hljs-number">25</span> <span class="hljs-keyword">AND</span> bmi &gt; <span class="hljs-number">18.5</span> THEN
+  OUTPUT <span class="hljs-string">"healthy weight"</span>
+<span class="hljs-keyword">ELSEIF</span> bmi &lt;= <span class="hljs-number">18.5</span> THEN
+  OUTPUT <span class="hljs-string">"underweight"</span>
+<span class="hljs-keyword">ELSE</span>
+  OUTPUT <span class="hljs-string">"overweight"</span>
+<span class="hljs-keyword">ENDIF</span></code></pre>
+
+
+
+<h3 id="example-3">Example 3</h3>
+
+<p>Write an algorithm using pseudocode or a flowchart that will calculate the resistance of a resistor. The algorithm must:</p>
+
+<ul>
+<li>Ask the user for the colours of the first three bands on the resistor.</li>
+<li>If they don’t enter a black, brown ,red, orange, yellow, green, blue, violet, grey or white it should ask them to enter a colour again.</li>
+<li>The first band should indicate the first digit of the resistance, with black being 0 up to white being 9.</li>
+<li>The second band should indicate the second digit of the resistance, with black being 0 up to white being 9.</li>
+<li>The third band should indicate the number of 0s to be added to the end of the first two digits, with black being 0 up to 9 being white.</li>
+<li>The resistance should be reported back to the user.</li>
+</ul>
+
+
+
+<h4 id="solutions-1">Solutions</h4>
+
+
+
+<pre class="prettyprint"><code class="language-pseudocode hljs vhdl">colours &lt;- [<span class="hljs-string">"black"</span>, <span class="hljs-string">"brown"</span>, <span class="hljs-string">"red"</span>, <span class="hljs-string">"orange"</span>, <span class="hljs-string">"yellow"</span>, <span class="hljs-string">"green"</span>, <span class="hljs-string">"blue"</span>, <span class="hljs-string">"violet"</span>, <span class="hljs-string">"grey"</span>, <span class="hljs-string">"white"</span>]
+
+REPEAT
+  band_1 &lt;- USERINPUT
+  band_2 &lt;- USERINPUT
+  band_3 &lt;- USERINPUT
+<span class="hljs-keyword">UNTIL</span> band_1 <span class="hljs-keyword">IN</span> colours <span class="hljs-keyword">AND</span> band_1 <span class="hljs-keyword">IN</span> colours <span class="hljs-keyword">AND</span> band_1 <span class="hljs-keyword">IN</span> colours
+
+counter = <span class="hljs-number">1</span>
+resistance = <span class="hljs-number">0</span>
+<span class="hljs-keyword">WHILE</span> counter &lt;= <span class="hljs-number">3</span>
+  <span class="hljs-keyword">IF</span> counter = <span class="hljs-number">1</span> <span class="hljs-keyword">THEN</span>
+    <span class="hljs-keyword">FOR</span> band_count &lt;- <span class="hljs-number">0</span> <span class="hljs-keyword">to</span> <span class="hljs-number">9</span>
+      <span class="hljs-keyword">IF</span> colours[band_count] = band_1 <span class="hljs-keyword">THEN</span>
+        resistance = resistance + band_count
+        BREAK
+  ELSEIF counter = <span class="hljs-number">2</span> <span class="hljs-keyword">THEN</span>
+    <span class="hljs-keyword">FOR</span> band_count &lt;- <span class="hljs-number">0</span> <span class="hljs-keyword">to</span> <span class="hljs-number">9</span>
+      <span class="hljs-keyword">IF</span> colours[band_count] = band_2 <span class="hljs-keyword">THEN</span>
+        resistance = resistance + (band_count * <span class="hljs-number">10</span>)
+        BREAK
+  <span class="hljs-keyword">ELSE</span>
+    <span class="hljs-keyword">FOR</span> band_count &lt;- <span class="hljs-number">0</span> <span class="hljs-keyword">to</span> <span class="hljs-number">9</span>
+      <span class="hljs-keyword">IF</span> colours[band_count] = band_3 <span class="hljs-keyword">THEN</span>
+        resistance = resistance * (<span class="hljs-number">10</span> ^ band_count)
+        BREAK
+  ENDIF
+ENDWHILE
+
+OUTPUT resistance</code></pre>
+
+
+
+<h3 id="example-4">Example 4</h3>
+
+<p>Write an algorithm using pseudocode or a flowchart that will correctly identify a hydrocarbon:</p>
+
+<ul>
+<li>Ask the user how many carbons are in the hydrocarbon and only accept numbers between 1 and 8</li>
+<li>Ask the user how many hydrogens are in the hydrocarbon and only accept numbers between the number of carbons * 2, the (number of carbons * 2) + 2 or the (number of carbons * 2) -2.</li>
+<li>The number of carbons indicates the prefix of the hydrocarbon name, according to the following table.</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+  <th>Carbons</th>
+  <th>Prefix</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>1</td>
+  <td>Meth</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>Eth</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>Prop</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>But</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>Pent</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>Hex</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>Hept</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>Oct</td>
+</tr>
+</tbody></table>
+
+
+<ul>
+<li>The suffix is decided by the ratio of carbon to hydrogen.</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+  <th>Ratio</th>
+  <th>Suffix</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>C<sub>n</sub>H<sub>2n+2</sub></td>
+  <td>ane</td>
+</tr>
+<tr>
+  <td>C<sub>n</sub>H<sub>2n</sub></td>
+  <td>ene</td>
+</tr>
+<tr>
+  <td>C<sub>n</sub>H<sub>2n-2</sub></td>
+  <td>yne</td>
+</tr>
+</tbody></table>
+
+
+<ul>
+<li>So C<sub>3</sub>H<sub>8</sub> would be Propane, C<sub>3</sub>H<sub>6</sub> would be Propene and C<sub>3</sub>H<sub>4</sub> would be Propyne</li>
+<li>The name of the hydrocarbon should be reported back to the user.</li>
+</ul>
+
+
+
+<h4 id="solution-1">Solution</h4>
+
+
+
+<pre class="prettyprint"><code class="language-pseudocode hljs haskell"><span class="hljs-title">prefixes</span> &lt;- [<span class="hljs-string">"Meth"</span>, <span class="hljs-string">"Eth"</span>, <span class="hljs-string">"Prop"</span>, <span class="hljs-string">"But"</span>, <span class="hljs-string">"Pent"</span>, <span class="hljs-string">"Hex"</span>, <span class="hljs-string">"Hept"</span>, <span class="hljs-string">"Oct"</span>]
+<span class="hljs-type">REPEAT</span>
+  carbons &lt;- <span class="hljs-type">INPUT</span> <span class="hljs-string">"How many carbon atoms do you have?"</span>
+<span class="hljs-type">UNTIL</span> <span class="hljs-number">1</span> &lt;= carbons &lt;= <span class="hljs-number">8</span>
+<span class="hljs-title">hydrogens</span> &lt;- <span class="hljs-type">INPUT</span> <span class="hljs-string">"How many hydrogen atoms do you have?"</span>
+<span class="hljs-type">CASE</span> hydrogens <span class="hljs-type">OF</span>
+  carbons * <span class="hljs-number">2</span> + <span class="hljs-number">2</span>: name &lt;- prefixes[carbons] + <span class="hljs-string">"ane"</span>
+  carbons * <span class="hljs-number">2</span>: name &lt;- prefixes[carbons] + <span class="hljs-string">"ene"</span>
+  carbons * <span class="hljs-number">2</span> - <span class="hljs-number">2</span>: name &lt;- prefixes[carbons] + <span class="hljs-string">"yne"</span>
+<span class="hljs-type">ENDCASE</span>
+
+<span class="hljs-type">OUTPUT</span> name</code></pre>
+
+<p>1</p>
+
+  </section>
+</html>
