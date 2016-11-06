@@ -17,7 +17,7 @@ Above, we have a **table** - *a two-dimensional structure used to store data*. E
 
 To prevent replication of data, i.e. to prevent Bob from appearing twice in the table, and to build inter-table relationships each record needs a unique identifier - we call this a **primary key**. No two records can share a primary key.
 
-There is a major problem with flat-file databases: say that Bob decided that he was going to get a pet hippopotamus for Christmas. However, there is no space on Bob's record to add another pet. We could of course add another column to the table, however our table would get rather large if Bib went and bought a farm. The solution to this is the **relational database**
+There is a major problem with flat-file databases: say that Bob decided that he was going to get a pet hippopotamus for Christmas. However, there is no space on Bob's record to add another pet. We could, of course, add another column to the table, however, our table would get rather large if Bib went and bought a farm. The solution to this is the **relational database**
 
 ## Relational databases
 
