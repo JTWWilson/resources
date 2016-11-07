@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE-Computer-Science-Theory by fabcooldog</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/fabcooldog/GCSE-Computer-Science-Theory">View On GitHub</a></li>
+      <li class="downloads"><a href="https://fabcooldog.github.io/GCSE-Computer-Science-Theory/index.html">Home</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE-Computer-Science-Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Computer Science (4512/1) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+
+  <section>
+
+<h2 id="the-software-development-life-cycle-and-prototyping">The Software Development Life Cycle and Prototyping</h2>
+
+
+
+<h2 id="overview">Overview</h2>
+
+<p>The software development life cycle is comprised of two parts: a description of the phases of development and the order in which the phases are to be carried out.</p>
+
+
+
+<h2 id="the-general-model-of-the-sdlc">The General Model of the SDLC</h2>
+
+<p>The <em>general model</em> of software development can be split into 5 distinct phases.</p>
+
+<ul>
+<li><p>The <strong>specification requirements</strong> are an essential step in the development cycle. At this stage, the designers, users and programmers should all be involved. After this stage, everyone should be aware of:</p>
+
+<ul><li>What functions the software will perform.</li>
+<li>What the UX will be like.</li>
+<li>What data the software will access, produce and store.</li>
+<li>How the data will be processed.</li></ul>
+
+<p>By the end of this phase, a specification document should be drawn up that can be referred to throughout the development process.</p></li>
+<li><p>The <strong>design</strong> stage is usually carried out by software architects. This is often accomplished using flowcharts to detail the flow of data through the software. At this stage, mock-ups of the UI are also often created.</p></li>
+<li><p>At the <strong>implementation</strong> stage the code is written. The programmers will accomplish this using the design that was provided by the software architects in the design stage.</p></li>
+<li><p>During the <strong>testing</strong> stage the software is tested against the specification. Unit tests are used to test individual elements of the software, while software tests are used to test the software as a whole.</p></li>
+<li><p>At the <strong>evolution</strong> stage, software is upgraded. This can happen for a number of different reasons:</p>
+
+<ul><li>Flaws or bugs in the original software are discovered.</li>
+<li>Security update are carried out due to previously unknown threats.</li>
+<li>The customer requirements may change.</li>
+<li>There may be hardware changes which need to be carried out.</li></ul></li>
+</ul>
+
+
+
+<h2 id="models-of-software-development">Models of Software Development</h2>
+
+<p>There are four major SD models: the waterfall model; the incremental model; the spiral model; and the v-shaped model.</p>
+
+
+
+<h3 id="waterfall-model">Waterfall Model</h3>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Waterfall_model.svg" alt="waterfall model" title=""></p>
+
+<p>In the waterfall model, there are the usual 5 stages of development. However, the development should not move to the next step until the previous step has been fully completed and verified.</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Advantages</th>
+  <th align="left">Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Works well for smaller projects where requirements are very well understood</td>
+  <td align="left">High amounts of risk and uncertainty</td>
+</tr>
+<tr>
+  <td align="left">Easy to manage due to the rigidity of the model</td>
+  <td align="left">No working software is produced until late in the development cycle</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="incremental-model">Incremental Model</h3>
+
+<p><img src="http://istqbexamcertification.com/wp-content/uploads/2012/01/Incremental_model.jpg" alt="incremental model" title=""></p>
+
+<p>In the incremental model the requirements are divided into various builds, thus multiple development cycles occur. Each cycle is divided into more easily managed modules, which all go through the phases of design, development, testing and implementation.</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Advantages</th>
+  <th align="left">Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Generates working software quickly and early in the development cycle</td>
+  <td align="left">Needs good planning and design to work effectively</td>
+</tr>
+<tr>
+  <td align="left">Easier to test and debug code in a smaller iteration</td>
+  <td align="left">Needs a “clear and complete” definition of the program before it can be split incrementally</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="spiral-model">Spiral Model</h3>
+
+<p><img src="http://4.bp.blogspot.com/-DrUmxAA-0ow/Tuel4-sLo1I/AAAAAAAAAIE/MziZ7Wnu1F8/s1600/Spiral_model.JPG" alt="spiral model" title=""></p>
+
+<p>The spiral model is split into the four stages of planning, risk analysis, development and evaluation. The projects repeatedly passes through these steps in iterations until all issues are resolved. </p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Advantages</th>
+  <th align="left">Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">High amount of risk analysis, so good for higher-risk projects</td>
+  <td align="left">Can be a costly model to use</td>
+</tr>
+<tr>
+  <td align="left">Software is produced early in the development cycle</td>
+  <td align="left">Success is heavily reliant on the risk analysis stage of development</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="v-shaped-model">V-Shaped Model</h3>
+
+<p><img src="http://1.bp.blogspot.com/-puUJFe5lFHk/T4iml5pOc9I/AAAAAAAACb8/yKMKNb_ff8g/s1600/V-Shaped.png" alt="v-shaped model" title=""></p>
+
+<p>Similarly to the waterfall model, the V-shaped model can only continue onto the next step when the previous step is fully completed and verified. However, the testing of the product is planned in parallel to the design of the product with a corresponding phase of development, making the V-shaped model more similar to <em>test-driven development</em> or TDD.</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Advantages</th>
+  <th align="left">Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Testing is planned before the software is written, saving a lot of time</td>
+  <td align="left">Very rigid and has little flexibility</td>
+</tr>
+<tr>
+  <td align="left">Example of proactive defect tracking, where defects are found early on</td>
+  <td align="left">If any changes happen midway, then the test documents and the requirement documents have to be updated as well</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h2 id="prototyping">Prototyping</h2>
+
+<p>A prototype is an early model or release of software built to test a concept or to act as something to be replicated or learned from. They typically allow a customer to evaluate a product or feature of a proposed software solution, rather than relying on interpretations of designs.</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Advantages</th>
+  <th align="left">Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Prototypes help evaluate whether the developed software matches the specification</td>
+  <td align="left">The prototype may be perfect, but are unable to be scaled into a full solution</td>
+</tr>
+<tr>
+  <td align="left">They allow the client to provide feedback on software features, even if the full solution is incomplete</td>
+  <td align="left">Prototyping can be excessively long if it is not done correctly - it should be quick to be effective</td>
+</tr>
+<tr>
+  <td align="left">They asist in producing a product that more closely matches the client’s needs.</td>
+  <td align="left"></td>
+</tr>
+</tbody></table>
+
+  </section>
+</html>
