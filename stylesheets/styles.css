@@ -72,7 +72,7 @@
    Custom Div Tests
    ========================================================================== */
 #testli div {
-  width: 200px;
+  width: 300px;
 }
  
 #testli h2 {
@@ -100,7 +100,7 @@
   text-decoration: none;
   color: #DBDBDB;
   display: block;
-  width: 200px;
+  width: 300px;
   -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
   -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
   -o-transition: font-size 0.3s ease, background-color 0.3s ease;
