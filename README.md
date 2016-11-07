@@ -13,8 +13,6 @@ Page template:
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>GCSE-Computer-Science-Theory by fabcooldog</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <link rel="stylesheet" href="stylesheets/ie.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
 
