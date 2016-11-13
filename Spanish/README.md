@@ -1,4 +1,4 @@
-## Tense Page Templat
+## Tense Template
 
 ```
 < Tense >
