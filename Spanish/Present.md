@@ -15,7 +15,7 @@ Present Tense
 
 
 |Infinitive|-<u>ar</u>|-<u>er</u>|-<u>ir</u>|
-|---|---|---|--|
+|----------|----------|----------|----------|
 |<u>I</u>|<u>o</u>|<u>o</u>|<u>o</u>|
 |<u>You</u>(s.)|<u>as</u>|<u>es</u>|<u>es</u>|
 |<u>He/She/It</u>|<u>a</u>|<u>e</u>|<u>e</u>|
