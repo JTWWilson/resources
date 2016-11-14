@@ -7,14 +7,14 @@
 - It can be used as an ASTABLE timer to make flashing light circuits or to make a loudspeaker produce a sound and it can be used as a MONOSTABLE circuit to switch a device on after a set time or to switch a device on for a set time. The 555 makes it easy to get accurate time delays.
 - The 555 timer is an 8 pin DIL package containing 25 transistors, 2 diodes and 16 resistors. Its legs are configured as follows :
 
-![enter image description here](https://github.com/Olie13201/Combined-Engineering-Resources/blob/master/Systems-and-Control/Images/555.png?raw=true)
+![555-Timer with description of pins](https://github.com/Olie13201/Combined-Engineering-Resources/blob/master/Systems-and-Control/Images/555.png?raw=true)
 
 
 ###555 as a **monostable**
 
 A mono stable circuit has one input and one output. When the input is made high, the output goes high. When the input goes low, the output stays high for a set time period, then goes low. Astable circuits are easily recognised, and pins 6 and 7 are connected to the positive rail. 
 
-![enter image description here](https://www.bournetoinvent.com/projects/gcse_theory/img/mono_ex.png)
+![Monostable example](https://www.bournetoinvent.com/projects/gcse_theory/img/mono_ex.png)
 
  The time the output stays high can be calculated with…
 	T = 1.1 x R x C
@@ -30,7 +30,7 @@ A Circuit Wizard example you can download to experiment with can be picked up [h
 
 This circuit needs no trigger to start it. As soon as power is supplied the output will begin to oscillate between 9 volts and 0 volts. The time the output spends in each state depends on the values of R1 , R2 and C. The astable circuit can be made to oscillate very quickly (up to millions of cycles per sec) or slowly (down to many minutes per cycle). It can be used to make bulbs flash, drive a loudspeaker to produce a noise or be used as a counter/ timer. 
 
-![enter image description here](https://www.bournetoinvent.com/projects/gcse_theory/img/ast_ex.png) 
+![Astable example](https://www.bournetoinvent.com/projects/gcse_theory/img/ast_ex.png) 
 
 Astable circuits are easily recognised, and pins 2 and 6 are connected, and go to 0v. 
 
