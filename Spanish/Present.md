@@ -27,7 +27,7 @@ Present Tense
 ###Common Irregular Conjugations
 
 |Infinitive|Ir|Dar|Ser|Tener|
-|----------|--|---|---|-----|
+|---|---|---|---|---|
 |<u>I</u>|V<u><b>oy</b></u>|D<u><b>oy</b></u>|S<b><u>oy</u></b>|Ten<b>g</b><u>o</u>|
 |<u>You</u>(s.)|V<u>as</u>|D<u>as</u>|<b>Er</b><u>es</u>|T<b>i</b>en<u>es</u>|
 |<u>He/She/It</u>|V<u>a</u>|D<u>a</u>|<b>es</b>|T<b>i</b>en<u>e</u>|
