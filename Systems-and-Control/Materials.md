@@ -21,9 +21,9 @@ Hardwoods come from broad-leaved, deciduous trees. The main hardwood timbers are
 |Beech|Hardwood|Light brown|Close-grained, hard, warps easily|Furniture, toys|
 |Elm|Hardwood|Light brown|Open/interlocking grain, tough, durable in water, resists splitting|Indoor and outdoor furniture|
 
-####Composite Woods
+####Manufactured Boards
 
-**Manufactured boards** - Man-made boards are those which are produced in factories. They tend to have a uniform appearance, and have unique properties. It is often cheaper and easier to buy composites rather than natural wood.
+**Manufactured boards** are man-made boards are those which are produced in factories. They tend to have a uniform appearance, and have unique properties. It is often cheaper and easier to buy composites rather than natural wood.
 
 |Board|Appearance|Properties|Common Uses|
 |-----|------|----------|-----------|
