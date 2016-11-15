@@ -66,7 +66,7 @@ When forming the present subjunctive for regular verbs:
 </br>
 >I don't think that it is very difficult
 
->Cuando vayas a Barcelond debes comer tapas
+>Cuando vayas a Barcelona debes comer tapas
 </br>
 >When you go to Barcelona you must eat tapas
 
