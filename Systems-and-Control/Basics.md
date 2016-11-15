@@ -6,7 +6,7 @@ In S&C one of the most important equations is **V = I x R**
 
 <b>V</b>oltage - (Also *Potential Difference*) The difference in energy levels between two points of a circuit. Measured in *Volts* (V). 
 
-<span id=detail><b>I</b></span> - Current - The number of electrons that pass a given point per second. Measured in *Amps* (A) (From Ampères).  
+<b>I</b> - Current - The number of electrons that pass a given point per second. Measured in *Amps* (A) (From Ampères).  
 
 <b>R</b>estistance - The measure of how good a substance is at conducting electricity. Measured in *Ohms* (Ω).    
  
