@@ -35,7 +35,7 @@ works as intended. However, it is a fairly lengthy and complicated process.
 
 Sometimes, when writing an algorithm, you use a **trace table** to *trace* the changes that occur to a variable throughout the program. As this method of testing is simple and can be performed *without* (!) a computer, it is favoured by exam boards to examine testing ability.
 
-``
+```
 X <-- 1
 Y <-- 2
 WHILE Y < 5
