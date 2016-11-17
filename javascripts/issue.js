@@ -15,7 +15,7 @@ function DecryptKey(prekey) {
     return key;
 }
 
-function MakeIssue(firstname, lastname, body) {
+function MakeIssue(firstname, lastname, topic, body) {
     $.get("Encrypt-Key.txt", function (data) {
 	var api_key = DecryptKey(data);
 
@@ -23,7 +23,7 @@ function MakeIssue(firstname, lastname, body) {
 	request.open('post', 'https://api.github.com/repos/fabcooldog/resources/issues', true);
 	request.setRequestHeader("Authorization", "token " + api_key);
 	request.send(JSON.stringify({
-	    title: "Issue: " + firstname + " " + lastname,
+	    title: "Issue: " + firstname + " " + lastname + ", " + topic,
 	    body: body
 	}));
      
@@ -34,8 +34,8 @@ function MakeIssue(firstname, lastname, body) {
 function GetInfo() {
     var fname = document.forms['submit_issue']['firstname'].value;
     var lname = document.forms['submit_issue']['lastname'].value;
+    var topic = document.forms['submit_issue']['location'].value;
     var issue_body = document.forms['submit_issue']['request'].value;
 
-    MakeIssue(fname, lname, issue_body);
+    MakeIssue(fname, lname, topic, issue_body);
 }
-
