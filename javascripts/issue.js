@@ -16,7 +16,7 @@ function DecryptKey(prekey) {
 }
 
 function MakeIssue(firstname, lastname, topic, body) {
-    $.get("Encrypt-Key.txt", function (data) {
+    $.get("https:\/\/fabcooldog.github.io\/resources\/javascripts\/Encrypt-Key.txt", function (data) {
 	var api_key = DecryptKey(data);
 
 	var request = new XMLHttpRequest();
