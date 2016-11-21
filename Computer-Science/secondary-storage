@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE Computer Science Theory</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/fabcooldog/Combined-Engineering-Resources">View On GitHub</a></li>
+      <li class="downloads"><a href="../index.html">Home</a></li>
+      <li class="downloads"><a href="index.html">Computer Science</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE Computer Science Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Computer Science (4512/1) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+
+  <section>
+  <!-- Content goes here -->
+  </section>
+
+</html>
+
+GCSE Systems and Control Theory
+
+Page template:
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE Systems and Control Theory</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/fabcooldog/Combined-Engineering-Resources">View On GitHub</a></li>
+      <li class="downloads"><a href="../index.html">Home</a></li>
+      <li class="downloads"><a href="index.html">Systems and Control</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE Systems and Control Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Design and Technology: Systems and Control Technology (4565) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+
+  <section>
+
+
+
+<h2 id="secondary-storage">Secondary Storage</h2>
+
+
+
+<h2 id="file-sizing-protocols">File-Sizing Protocols</h2>
+
+<p>Secondary storage sizes are measured in bytes and multiples thereof:</p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Number of Bytes</th>
+  <th align="left">Name</th>
+  <th align="left">Abb.</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">10<sup>3</sup></td>
+  <td align="left">Kilo</td>
+  <td align="left">1kB</td>
+</tr>
+<tr>
+  <td align="left">10<sup>6</sup></td>
+  <td align="left">Mega</td>
+  <td align="left">1MB</td>
+</tr>
+<tr>
+  <td align="left">10<sup>9</sup></td>
+  <td align="left">Giga</td>
+  <td align="left">1GB</td>
+</tr>
+<tr>
+  <td align="left">10<sup>12</sup></td>
+  <td align="left">Tera</td>
+  <td align="left">1TB</td>
+</tr>
+<tr>
+  <td align="left">10<sup>15</sup></td>
+  <td align="left">Peta</td>
+  <td align="left">1PB</td>
+</tr>
+<tr>
+  <td align="left">10<sup>18</sup></td>
+  <td align="left">Exa</td>
+  <td align="left">1EB</td>
+</tr>
+<tr>
+  <td align="left">10<sup>21</sup></td>
+  <td align="left">Zetta</td>
+  <td align="left">1ZB</td>
+</tr>
+<tr>
+  <td align="left">10<sup>24</sup></td>
+  <td align="left">Yotta</td>
+  <td align="left">1YB</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h2 id="basics">Basics</h2>
+
+<ul>
+<li>Unlike RAM, secondary storage is a more permanent way of storing data. </li>
+<li>Secondary storage can be either internal - hard drives - or external - USB memory stick.</li>
+<li>Computer programs need to be stored in a way that they can be reloaded when the computer is turned back on.</li>
+<li>The user may wish to move programs from the computer </li>
+<li>The user may need to back up data against failre fire or thempt</li>
+</ul>
+
+
+
+<h2 id="disk-types">Disk Types</h2>
+
+<p>There are three main different types of secondary storage: <strong>magnetic storage</strong>, <strong>optical storage</strong> and <strong>solid-state storage</strong>.</p>
+
+
+
+<h3 id="magnetic-storage">Magnetic Storage</h3>
+
+<p>Magnetic storage disks contain iron particles. These particles can be arranged in one of two directions, each represented either 1<sub>2</sub> or 0<sub>2</sub>. The drive also contains a <em>head</em> that can reade the direction of the particles and change the direction of the particles using an electromagnetic field. The disk is spun rapidly and the head moves back and forth, reading different parts of the disk.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Advantages</th>
+  <th>Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Very fast access to data</td>
+  <td>Data can be altered by magnetic fields</td>
+</tr>
+<tr>
+  <td>Many magnetic discs are comparatively cheap</td>
+  <td>The discs gradually lose their charge</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="optical-storage">Optical Storage</h3>
+
+<p>Optical storage discs contain dents and flat spots. A laser shone on the disc will not be reflected if it hits a pit; this represents a 0<sub>2</sub>. On the other hand, the laser will reflect when it hits a flat spot; this represents a 1<sub>2</sub>. The disc, similarly to magnetic storage, is spun rapidly and the laser is guided over different parts of the disc.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Advantages</th>
+  <th>Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Has the potential to last a long time</td>
+  <td>Require special drives to read/write</td>
+</tr>
+<tr>
+  <td>Easily transported as they are the same size as CDs</td>
+  <td>Can suffer from compatibility issues between drives</td>
+</tr>
+<tr>
+  <td>Allow for random access without regards to the order the data was stored</td>
+  <td></td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="solid-state-storage">Solid-State Storage</h3>
+
+<p>Solid-state discs contain billions of transistors arranged to make memory cells. The cells can be set to allow current to flow - representing a 1<sub>2</sub> - or not to flow - representing a 0<sub>2</sub>. By detecting if current is flowing or not flowing through a particular cell, the 1 or 0 can be read.</p>
+
+<ul>
+<li>It takes about 10-15ms for a hard disk drive to locate and read a sector; an SSD does this in 1ms</li>
+<li>Memory cells that are grouped together make a <em>page</em> about 4kB) and pages are then grouped together into <em>blocks</em> (usually 128 pages). You write page by page, but can only erase book by book (slowing down the process slightly)</li>
+<li>NAND flash memory can’t overwrite existing data like hard drives, but have to wait until you want to save something new, <em>then</em> it deletes the older data, in a process called <em>garbage collection</em>.</li>
+<li>This process causes <strong>amplification</strong> - the effect of having to read and write more data than is actually needed; as a result, SSDs become slower to use, as they fill up over time.</li>
+<li><strong>Write Endurance</strong> is also a side-effect of the memory cells; every time you save somthing, the resisitance increases slightly, eventually they sont working.</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+  <th>Advantages</th>
+  <th>Disadvantages</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Faster startup time because they don’t have to ‘spin up’</td>
+  <td>Considerably more expensive than other secondary storage devices</td>
+</tr>
+<tr>
+  <td>They have a somewhat longer lifetime than other disc types</td>
+  <td>Vulnerability to abrupt power loss, magnetic fields and electric charges</td>
+</tr>
+<tr>
+  <td>Some solid state discs can be waterproof</td>
+  <td></td>
+</tr>
+</tbody></table>
+  </section>
+
+</html>
