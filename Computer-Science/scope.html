@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE Computer Science Theory</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/fabcooldog/Combined-Engineering-Resources">View On GitHub</a></li>
+      <li class="downloads"><a href="../index.html">Home</a></li>
+      <li class="downloads"><a href="index.html">Computer Science</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE Computer Science Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Computer Science (4512/1) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+
+  <section>
+<h2 id="scope">Scope</h2>
+
+
+
+<h2 id="basics">Basics</h2>
+
+<ul>
+<li>Scope refers to the visibility of variables - in other words, in which parts of your program can see or use it. Normally, every variable has a <strong>global</strong> scope. Once defined, every part of your program can access that variable. However, it is very useful to be able to limit a variable’s scope to a single function. In other words, the variable will have a limited <strong>local</strong> scope. This way, changes inside the function can’t affect the main program in unexpected ways</li>
+<li>The scope of variables can be <strong>local</strong> or <strong>global</strong>. <br>
+<ul><li>Local variables only work in the loop, procedure or class in which they are created whilst <br>
+global variables can be accessed from <em>any point</em> in a program.</li></ul></li>
+<li>For example:</li>
+</ul>
+
+
+
+<pre class="prettyprint"><code class=" hljs php">OUTPUT <span class="hljs-string">"Here are the even numbers up to 100"</span>  
+<span class="hljs-keyword">FOR</span> i &lt;-- <span class="hljs-number">1</span> TO <span class="hljs-number">100</span> 
+    <span class="hljs-keyword">IF</span> i MOD <span class="hljs-number">2</span> = <span class="hljs-number">0</span> 
+        OUTPUT i
+    <span class="hljs-keyword">ENDIF</span> 
+<span class="hljs-keyword">ENDFOR</span> 
+OUTPUT <span class="hljs-string">"Finished"</span></code></pre>
+
+<p>The variable <strong>i</strong> has scope between <strong>lines 2 and 6</strong>. This is called <strong>block scope</strong> because <strong>i</strong> can only be used within the block of the for loop. <br>
+If a programmer were to try and use the variable before line 2 or after line 6, there would be a run-time error.</p>
+
+<ul>
+<li>A variable has <strong>global</strong> scope if it can be accessed from anywhere in a project.</li>
+</ul>
+
+
+
+<pre class="prettyprint"><code class=" hljs cmake">X &lt;-- <span class="hljs-string">"test value"</span>
+
+<span class="hljs-keyword">FUNCTION</span> <span class="hljs-keyword">message</span>()
+    OUTPUT X
+<span class="hljs-keyword">ENDFUNCTION</span>
+
+<span class="hljs-keyword">FUNCTION</span> changeMessage()
+    OUTPUT <span class="hljs-string">"The message is:"</span> + X
+    X &lt;-- INPUT <span class="hljs-string">"What new message would you like?"</span>
+<span class="hljs-keyword">ENDFUNCTION</span></code></pre>
+
+<p>Variables with global scope are usually considered bad practice in most languages, due to the increased risk of <a href="https://en.wikipedia.org/wiki/Name_collision">name collisions</a>. <br>
+- <strong>Function</strong> scope is similar:</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs vhdl"><span class="hljs-keyword">FUNCTION</span> square(n)
+    <span class="hljs-keyword">RETURN</span> n * n
+ENDFUNCTION
+
+<span class="hljs-keyword">FUNCTION</span> sumSquares(n)
+    total &lt;<span class="hljs-comment">-- 0</span>
+    i &lt;<span class="hljs-comment">-- 0</span>
+    <span class="hljs-keyword">WHILE</span> i&lt;= n:
+        total &lt;<span class="hljs-comment">-- total + square(i)</span>
+        i &lt;<span class="hljs-comment">-- i + 1</span>
+    ENDWHILE
+    <span class="hljs-keyword">RETURN</span> total
+ENDFUNCTION</code></pre>
+
+
+
+<h2 id="task">Task</h2>
+
+<p><strong>Write a program for a user to input to input two numbers, then write the result of them being added together. The result from this should then be multiplied by three.</strong></p>
+
+<p><strong>Do this in three ways, using function, module and global scopes.</strong></p>
+
+<p>Python One Liner: <br>
+<code>print(sum([int(input('Input {} number'.format(i))) for i in ['first', 'second']]) * 3) <br>
+</code></p>
+
+
+
+<h2 id="practice-questions">Practice Questions</h2>
+
+
+
+<h3 id="june-2014">June 2014</h3>
+
+
+
+<h4 id="q1">Q1&gt;</h4>
+
+<p><strong>The variable i in Figure 1 only has scope between lines 3 and 7. Explain with reference to the variable i what scope means.</strong> <br>
+[1 mark]</p>
+
+
+
+<h4 id="q2">Q2&gt;</h4>
+
+
+
+<h5 id="fig-2">Fig 2.</h5>
+
+<pre><code>    VAT = 0.20
+    def calculations(amount):
+        tax = (VAT/amount)
+        print (tax)    
+        totalCost = amount + tax
+        return totalCost
+    total = float(input("How much does the item cost? ")
+    print (calculations(total))</code></pre>
+
+
+
+<h5 id="2a">2a</h5>
+
+<p>What does scope mean?</p>
+
+
+
+<h5 id="2b">2b</h5>
+
+<p>What is the scope of VAT?</p>
+
+
+
+<h5 id="2c">2c</h5>
+
+<p>What is the scope of tax?</p>
+
+
+
+<h5 id="2d">2d</h5>
+
+<p>What is the scope of totalCost?</p>
+
+
+
+<h5 id="2e">2e</h5>
+
+<p>What is the scope of total?</p>
+
+
+
+<h5 id="2f">2f</h5>
+
+<p>Why would it necessary for a variable to have limited scope?</p>
+  </section>
+
+</html>
