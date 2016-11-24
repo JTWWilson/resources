@@ -50,17 +50,17 @@
 	<footer>
 		<h1 style="text-align: center;">Submit issue / feature request:</h1>
     <form name="submit_issue" action="javascript:GetInfo()" method="post" style="text-align: center;">
-      <p>
+      <p id="form_first">
 				First Name:
 				<br />
 				<input type='text' name='firstname' />
       </p>
-      <p>
+      <p id="form_last">
 				Last Name:
 				<br />
 				<input type='text' name='lastname' />
       </p>
-      <p>
+      <p id="form_location">
 	Feature Location:
 	<br />
 	<select name='location'>
@@ -69,7 +69,7 @@
 	  <option value='Systems and Control'>Systems and Control</option>
 	</select>
       </p>
-      <p>
+      <p id="form_feature">
 				Feature Request / Improvement:
 				<br />
 				<textarea rows='10' cols='30' name='request'></textarea>
