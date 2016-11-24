@@ -10,6 +10,8 @@ Present Tense
 - Present descriptions
  *He is strict* - *Es severo*
 
+The *present indicative* is different to the *present subjunctive*
+
 
 ###Regular Conjugations
 
