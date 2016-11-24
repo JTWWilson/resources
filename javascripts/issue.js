@@ -28,6 +28,7 @@ function MakeIssue(firstname, lastname, topic, body) {
 	}));
      
 	document.getElementById("output").innerHTML = "<strong>Issue Submitted</strong>";
+	document.getElementById("submit_issue").reset();
     });
 }
 
