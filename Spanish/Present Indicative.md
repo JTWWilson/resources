@@ -10,7 +10,7 @@ Present Tense
 - Present descriptions
  *He is strict* - *Es severo*
 
-The *present indicative* is different to the *present subjunctive*
+The *present indicative* is different to the *present subjunctive*; the indicative mood is used for talking about facts, while the subjunctive is for things that *might* happen and are not certain.
 
 
 ###Regular Conjugations
