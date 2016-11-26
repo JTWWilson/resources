@@ -6,7 +6,7 @@ Bacterial and Yeast Cells
 
 ![Bacterial Cell](../Images/bacterial_cell.png)
 
-A **bacterium** (plural *bacteri<b>a</b>*) is a single-celled organism that is much smaller than any animal or plant cell. Most bacteria are less than 10µm in length, as such, you are unable to see them without a microscope.    
+A **bacterium** (plural *bacteri<b>a</b>*) is a single-celled organism that is much smaller than any animal or plant cell. Most bacteria are less than 10Âµm in length, as such, you are unable to see them without a microscope.    
 
 Some bacteria can cause diseases -- such as *E. coli* -- but most bacteria are harmless. We even use some to make food (yoghurt and cheese) or medicines (penicillin).
 
@@ -15,15 +15,10 @@ Some bacteria can cause diseases -- such as *E. coli* -- but most bacteria are h
 
 ![Yeast Cell](../Images/yeast_cell.png)
 
-**Yeast** is another type of single-celled organism, like bacteria, that vary in size but are around 3-4µm in size. They reproduce asexually and are specifically adapted to anaerobic conditions. When there is little oxygen for them to use in aerobic respiration, they break down sugar to produce ethanol and carbon dioxide, this is *fermentation*. This process has been used by humans for millennia to make alcoholic drinks and bread. 
+**Yeast** is another type of single-celled organism, like bacteria, that vary in size but are around 3-4Âµm in size. They reproduce asexually and are specifically adapted to anaerobic conditions. When there is little oxygen for them to use in aerobic respiration, they break down sugar to produce ethanol and carbon dioxide, this is *fermentation*. This process has been used by humans for millennia to make alcoholic drinks and bread. 
 
 ## Differences and Similarities
-*Plant cells* and *animal cells* contain many of the same *organelles* but are different in a few ways: 
 
-1. Plant cells tend to have a rigid regular cells shape while animal cells vary massively.
-2. Plants stay in one place; they don't move around.
-3. Plants make their food via *photosynthesis*, while animals eat their food, be that meat or plants
-4. Plants and animal cells have different features:
 
 |Part	|Function|Found in|
 |-----|-----------|----------|
