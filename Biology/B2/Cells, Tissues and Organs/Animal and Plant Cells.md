@@ -16,7 +16,7 @@ Animal and Plant Cells
 |Cytoplasm|Jelly-like substance, where chemical reactions happen.|Plant and animal cells|
 |Nucleus|Controls what happens inside the cell and carries genetic information.|Plant and animal cells|
 |Chloroplast|Site of photosynthesis – chloroplasts contain a green substance called chlorophyll|Most plant cells|
-|Vacuole|Contains a liquid called cell sap, which keeps the cell firm.|Most plant cells and, temporaritly, some animal cells|
+|Vacuole|Contains a liquid called cell sap, which keeps the cell firm.|Most plant cells and, temporarily, some animal cells|
 |Cell wall|Made of cellulose, which supports the cell.|Plant cells only|
 |Ribosomes|Where protein synthesis occurs|Plant and animal cells|
 |Mitochondria|Site of anaerobic respiration (release energy)|Plant and animal cells|
