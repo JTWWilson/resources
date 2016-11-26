@@ -15,6 +15,6 @@ AQA sumarise this topic with the following:
 
 - **Animal and Plant Cells**
 - **Organelles**
-- **Bacteria and Yeast Cells**
+- **Bacterial and Yeast Cells**
 - **Specialised Human Cells**
 - **Diffusion**
