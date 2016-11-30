@@ -1,6 +1,8 @@
 Logic Gates
 ----------------
 
+Logic gates allow for inputs to be compared and, thus, influence an output. Yeah.
+
 ### AND
 
 ![AND Gate](http://media.techtarget.com/WhatIs/images/and.gif)
