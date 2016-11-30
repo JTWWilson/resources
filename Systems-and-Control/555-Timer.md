@@ -3,7 +3,7 @@
 
 555 Timer
 ---------------
-- Designed in 1971, the 555 timer chip is the most successful integrated circuit in the world. Its purpose is to allow circuits to utilize time (e.g. to make a light flash on and off at a certain interval).
+- Designed in 1971, the 555 timer chip is the most successful integrated circuit in the world. Its purpose is to allow circuits to utilise time (e.g. to make a light flash on and off at a certain interval).
 - It can be used as an ASTABLE timer to make flashing light circuits or to make a loudspeaker produce a sound and it can be used as a MONOSTABLE circuit to switch a device on after a set time or to switch a device on for a set time. The 555 makes it easy to get accurate time delays.
 - The 555 timer is an 8 pin DIL package containing 25 transistors, 2 diodes and 16 resistors. Its legs are configured as follows :
 
