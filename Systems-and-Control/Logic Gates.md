@@ -1,7 +1,7 @@
 Logic Gates
 ----------------
 
-Logic gates allow for inputs to be compared and, thus, influence an output. Yeah.
+Logic gates allow for inputs to be compared and, thus, influence an output. Although you do not need to know the interior workings of a logic gate, you **do** need to know the symbols for the gates listed below and the truth tables that follow as well.
 
 ### AND
 
