@@ -6,4 +6,5 @@ Resources for various subjects and their examinations, currently:
 - AQA Level 1/2 Certificate (iGCSE) in Spanish (8695)
 - AQA GCSE Systems and Control (4565/1) Theory
 - AQA GCSE Physics (4403)
+- AQA GCSE Biology (4401)
 - AQA GCSE Religious Studies B (4055/3 + 4055/4)
