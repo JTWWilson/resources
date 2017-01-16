@@ -11,7 +11,7 @@ Tackling Pseudocode/Flowchart Questions
 
 #### Tackling the question with pseudocode
  - Firstly, read the question and ensure you know **specifically** what it is that they are asking you to do.
- - Then, if it will help, add line-by-line *"comments"* to the space they give you (starting each line with a '#'), detailing the structure of your code. For example:
+ - Then, if it will help, add line-by-line *"comments"* to the space they give you (starting each line with a '#'), detailing the structure of your code. By doing this, not only will the examiner be able to see though your process and thus be able to understand what your aim is through you code, but your coding becomes nothing more than filling in the gaps. For example:
 
  ```
  # Ask the user for their option
