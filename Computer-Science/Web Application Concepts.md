@@ -14,4 +14,4 @@ Many web applications use both **client-side** and **server-side** features:
  - The client-side is the user interface of the application where the application is displayed in the browser using HTML, CSS and/or JavaScript. For example, data validation, advertising and the handling of cookies are all done from the client-side.
  - The server-side stores and processes the bulk of the data and source code using languages such as, but not limited to, SQL, PHP and Ruby. The most common function to happen server side is the querying and modifying of a database, though news feeds are also updated from the server-side.
 
-![client-server model](https://github.com/fabcooldog/Odds-and-Sods/raw/master/Client-Server.PNG)
+![client-server model](https://github.com/fabcooldog/Odds-and-Sods/raw/master/Client-Server-New.PNG)
