@@ -47,4 +47,4 @@ class Human():
 my_human = Human('Jacob', 4)
 ```
 
-This is a template for creating a human. We can use this `Human` template in order to create **instances** of the human with their own properties (so they can have their own names and ages). For the exam you do not need to understand the four main OOP class concepts (inheritance, etc.), neither do you need to know the syntax for defining, altering and creating an instance of a class, but you *do* need to know about classes as a data structure.
+This is a template for creating a human. We can use this `Human` template in order to create **instances** of the human with their own properties (so they can have their own names and ages). For the exam you do not need to understand the four main OOP class concepts (inheritance, etc.), neither do you need to know the syntax for defining, altering and creating an instance of a class, but you *do* need to know about classes as a data structure (even though *technically* classes are **programming paradigms** and not data structures)
