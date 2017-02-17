@@ -3,7 +3,8 @@
 This covers all of AQA Level 2 Further Mathematics (8360), which can be found on [AQA's website](http://www.aqa.org.uk/subjects/mathematics/aqa-certificate/further-mathematics-8360).
 It provides an introduction to higher A-Level concepts in algebra, geometry, calculus, matrices, trigonometry, functions and graphs.
 
-###**1.** Number
+###Number
+<sup>All content covered in standardd GCSE mathematics</sup>
 
 1.1 Knowledge and use of numbers and the number system including fractions, decimals, percentages, ratio, proportion and order of operations are expected   
 1.2 Manipulation of surds, including rationalising the denominator   
