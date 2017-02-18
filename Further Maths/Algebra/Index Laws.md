@@ -1,4 +1,4 @@
-##Index Laws
+##Index Laws (Core GCSE Material)
 
 When performing mathematical operations to numbers with indices, different changes happen to the index. These are the only operations you must know:
 
