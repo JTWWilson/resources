@@ -6,26 +6,22 @@
 
 When using surds, there are a few key rules:
 
->a = &radic;a × &radic;a = (&radic;a)<sup>2</sup>
+> ![basics 1](http://www.latex2png.com/output//latex_a148b2ac1e6b3dcf05627793c6207284.png)
 >   
->&radic;a × &radic;b = &radic;(a × b)
+> ![basics 2](http://www.latex2png.com/output//latex_4de3d6ec1f151f8013917e9d24666d7f.png)
 >   
->&radic;a / &radic;b = &radic;(a / b)
+> ![basics 3](http://www.latex2png.com/output//latex_679e36f1ea8c9aa54b83b0e91bd97bd1.png)
 
 ###Simplifying Surds
 
 To simplify a surd you divide the number under the root by the highest square number that can go into it, for example:
 
-> &radic;18 = &radic;(9 × 2) = &radic;9 × &radic;2 = 3 &radic;2
-
+> ![simp 1](http://www.latex2png.com/output//latex_18f04966128b335c956c603d887e5b1e.png)
 
 When simplifying a fraction with a surd in the denominator, you have to _rationalise_ it:   
 
-> 4 / (4 + &radic;3)
+> ![simp 2](http://www.latex2png.com/output//latex_6f00c682d25f876fad2fff211b9d44b0.png)
 
- Multiply both sides by the opposite half of completing the square; you've been given (a + b) so you multiply it by (a - b) to create a<sup>2</sup> + b<sup>2</sup>:
-><u>\_\_4 (4 - &radic;3)\_\_</u>     
->(4 + &radic;3)(4 - &radic;3)
-
-><u>16 - 4&radic;3</u>   
->          13
+ Multiply both sides by the opposite half of completing the square; you've been given (a + b) so you multiply it by (a - b) to create a<sup>2</sup> - b<sup>2</sup>
+ 
+ > ![simp 3](http://www.latex2png.com/output//latex_ffd73c7459027221afae5cf420141223.png)
