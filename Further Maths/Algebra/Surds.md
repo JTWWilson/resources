@@ -10,7 +10,7 @@ When using surds, there are a few key rules:
 >   
 > ![basics 2](http://www.latex2png.com/output//latex_4de3d6ec1f151f8013917e9d24666d7f.png)
 >   
-> ![basics 3](http://www.latex2png.com/output//latex_679e36f1ea8c9aa54b83b0e91bd97bd1.png)
+> ![basics 3](http://www.latex2png.com/output//latex_f65206b863905ed27a99f1a3c66be075.png)
 
 ###Simplifying Surds
 
