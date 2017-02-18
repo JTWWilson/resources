@@ -1,4 +1,4 @@
-##Manipulating Surd
+##Manipulating Surds
 
 **Surds** are a way of writing the root of a non-square number without having to go into an infinite decimal. For instance, &radic;3 is a surd, along with 3&radic;2.
 
