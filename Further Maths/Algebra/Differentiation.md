@@ -11,6 +11,7 @@ There is only one formula to remember when differentiating:
 
 ![differentiation equation](http://latex2png.com/output//latex_b4e140467b2812052bb2948fe9e99c8a.png)
 
+
 This can be read as *"the result of differentiating x<sup>n</sup> is nx<sup>n-1</sup>"*.
 
 #### Examples
@@ -18,6 +19,7 @@ This can be read as *"the result of differentiating x<sup>n</sup> is nx<sup>n-1<
 > Differentiate y when y = x<sup>5</sup>
 
 In this example, n = 5 as that is our power of x. Therefore, the differentiated form will be:
+
 
 ![differentiation 1](http://latex2png.com/output//latex_95dec9e80e0b5c8d543a6a2254b54c01.png)
 
@@ -61,6 +63,8 @@ We can then substitute our values for x into the expression to find the gradient
 
 * When x = 1, the gradient equals: 2 * 1 = **2**
 * When x = -2, the gradient equals: 2 * -2 = **-4**
+
+![differentiation gradients 2](https://github.com/fabcooldog/resources/raw/Create-further-Number/Further%20Maths/Images/Graphing%20Diff%20Gradients.PNG)
 
 ### Using differentiation to find rates of change
 
