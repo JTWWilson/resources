@@ -15,6 +15,7 @@ Maths for Systems & Control
 
 As we have 6V in a circuit but an LED can only take 3V, we need to remove **3V** from the circuit to prevent circuit failure. So:
 ![Solution](https://github.com/stanley-godfrey/Odds-And-Sods/raw/master/resistance_solution.png)
+
 So we would need a 150Ω resistor to prevent the LED from failing.
 
 ## Electrical Power
@@ -64,4 +65,7 @@ For this circuit:
 ### Example
 
 *A 9V battery supplies a potential divider. If two 1kΩ resistors are used, what is the voltage at V<sub>1</sub>?*
+
+![Example solution](https://github.com/stanley-godfrey/Odds-And-Sods/raw/master/pot_div_example.png)
+
 
