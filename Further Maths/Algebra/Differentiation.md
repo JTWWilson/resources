@@ -64,7 +64,7 @@ We can then substitute our values for x into the expression to find the gradient
 * When x = 1, the gradient equals: 2 * 1 = **2**
 * When x = -2, the gradient equals: 2 * -2 = **-4**
 
-![differentiation gradients 2](https://github.com/fabcooldog/resources/raw/Create-further-Number/Further%20Maths/Images/Graphing%20Diff%20Gradients.PNG)
+![differentiation gradients 2](https://github.com/fabcooldog/resources/raw/master/Further%20Maths/Images/Graphing%20Diff%20Gradients.PNG)
 
 You can see in the graph above that our two lines touch the line of y = x<sup>2</sup> at one point each, i.e. they are tangents to the curve. If in an exam you are asked to find the equation of these tangents, you can work them out just like you would work out the equation of any line in the form *y = mx + c* by substituting your gradient and a pair of x and y values into *y = mx + c* and then solving for c -- the y-intercept.
 
