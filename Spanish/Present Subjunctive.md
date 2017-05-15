@@ -1,7 +1,7 @@
 Present Subjunctive
 ------------------------------
 
-###Uses
+### Uses
 
 The present subjunctive is a tense that no longer *'exists'* in the English language. However, it is still present in the Spanish language, though it has limited uses.
 
@@ -11,13 +11,13 @@ It is used:
 - After *cuando* when talking about the future
 - When giving negative commands (you probably won't use this in your essays or speaking exam, but it is useful to be aware of)
 - After some set expressions
- - *es importante que*
- - *es posible que*
- - *es necesario que*
- - *es terrible que*
+  - *es importante que*
+  - *es posible que*
+  - *es necesario que*
+  - *es terrible que*
 - It is also used in sentences where there is a different person or thing as the object of the sentence.
 
-###Regular Conjugations
+### Regular Conjugations
 
 When forming the present subjunctive for regular verbs:
  - Take the 'I' form of the verb in the present tense
@@ -34,7 +34,7 @@ When forming the present subjunctive for regular verbs:
 |<u>You</u>(pl.)|<u>éis</u>|<u>áis</u>|<u>áis</u>|
 |<u>They</u>|<u>en</u>|<u>an</u>|<u>an</u>|
 
-####Examples
+#### Examples
 
 >Ojalá tenga un buen día
 </br>
@@ -48,7 +48,7 @@ When forming the present subjunctive for regular verbs:
 </br>
 > I like that my parents give me money OR It pleases me that my parents give me money
 
-###Irregular Conjugations
+### Irregular Conjugations
 
 |Infinitive|<u>dar</u>|<u>estar</u>|<u>haber</u>|<u>ir</u>|<u>saber</u>|<u>ser</u>|
 |---|---|---|---|---|---|---|
@@ -60,7 +60,7 @@ When forming the present subjunctive for regular verbs:
 |<u>You</u>(pl.)|<u>deis</u>|<u>estéis</u>|<u>hayáis</u>|<u>vayáis</u>|<u>sepáis</u>|<u>seáis</u>|
 |<u>They</u>|<u>den</u>|<u>estén</u>|<u>hayan</u>|<u>vayan</u>|<u>sepan</u>|<u>sean</u>|
 
-####Examples
+#### Examples
 
 >No pienso que sea muy difícil
 </br>
