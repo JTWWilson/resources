@@ -66,6 +66,6 @@ For this circuit:
 
 *A 9V battery supplies a potential divider. If two 1kΩ resistors are used, what is the voltage at V<sub>1</sub>?*
 
-![Example solution](https://github.com/stanley-godfrey/Odds-And-Sods/raw/master/pot_div_example.png)
+![Example solution](https://github.com/fabcooldog/resources/raw/master/Systems-and-Control/Images/pot_div_example.png)
 
 
