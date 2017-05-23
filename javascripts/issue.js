@@ -27,7 +27,7 @@ function MakeIssue(firstname, lastname, topic, body) {
 	    body: body
 	}));
      
-	document.getElementById("output").innerHTML = "<h3><strong">Issue Submitted</strong></h3>";
+	document.getElementById("output").innerHTML = "<h3><strong>Issue Submitted</strong></h3>";
 	document.getElementById("submit_issue").reset();
     });
 }
