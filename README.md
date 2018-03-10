@@ -1,6 +1,6 @@
-# Combined Engineering Resources
+# J Wilson Subject Notes
 
-A repository of the html pages (hosted via GitHub Pages) for the theory notes made around different engineering subjects.
+A repository of the html pages (hosted via GitHub Pages) for the notes made around different subjects.
 
 The following are html page templates.
 
@@ -74,6 +74,45 @@ Page template:
             <h1>GCSE Systems and Control Theory</h1>
             <span class="credits left">Notes for the AQA GCSE Design and Technology: Systems and Control Technology (4565) theory examination</span>
             <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+  
+  <section>
+  <!-- Content goes here -->
+  </section>
+    
+</html>
+```
+
+## AS Religious Studies
+
+Page template:
+
+```
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Religious Studies</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/jtwwilson/resources">View On GitHub</a></li>
+      <li class="downloads"><a href="../index.html">Home</a></li>
+      <li class="downloads"><a href="index.html">Computer Science</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>AS Religious Studies</h1>
+            <span class="credits left">Notes for the Edexcel Religious Studies examination</span>
           </div>
   </div>
   
