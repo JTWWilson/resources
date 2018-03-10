@@ -7,4 +7,4 @@ Resources for various subjects and their examinations, currently:
 - AQA GCSE Systems and Control (4565/1) Theory
 - AQA GCSE Physics (4403)
 - AQA GCSE Biology (4401)
-- AQA GCSE Religious Studies B (4055/3 + 4055/4)
+- Edexcel AS Religious Studies
