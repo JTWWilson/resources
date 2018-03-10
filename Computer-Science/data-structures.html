@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE Computer Science Theory</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/jtwwilson/resources">View On GitHub</a></li>
+      <li class="downloads"><a href="../index.html">Home</a></li>
+      <li class="downloads"><a href="index.html">Computer Science</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE Computer Science Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Computer Science (4512/1) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+  
+  <section>
+  <h2 id="data-structures">Data Structures</h2>
+<p>A data structure is a specialized format for <strong>organizing</strong> and <strong>storing</strong> data.</p>
+<h3 id="arrays-vs.-lists">Arrays vs. Lists</h3>
+<p>It is <strong>essential</strong> that you know the difference between an <strong>array</strong> and a <strong>list</strong>.</p>
+<ul>
+<li>A list can contain a mixture of data types, including other data structures.</li>
+<li>An array must contain all the same data types (i.e. only integers or only strings). These are usually more efficient than a list.</li>
+</ul>
+<h3 id="data-structure-operations-in-python">Data structure operations in Python</h3>
+
+<table>
+<thead>
+<tr>
+<th>Data Structure</th>
+<th align="left">Example Values</th>
+<th>Valid Operations</th>
+<th>Example of Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One-Dimensional array</td>
+<td align="left"><code>a = array([1, 2, 3])</code></td>
+<td>indexing</td>
+<td><code>a[0] = 1</code></td>
+</tr>
+<tr>
+<td>One-Dimensional list</td>
+<td align="left"><code>a = [1, True, 'a']</code></td>
+<td>indexing</td>
+<td><code>a[0] = 1</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>appending</td>
+<td><code>a.append(456.1)</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>length</td>
+<td><code>len(a)</code></td>
+</tr>
+<tr>
+<td>Two-Dimensional array</td>
+<td align="left"><code>a = array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])</code></td>
+<td>indexing</td>
+<td><code>a[0] = 1</code></td>
+</tr>
+<tr>
+<td>Two-Dimensional list</td>
+<td align="left"><code>a = [[1, '2', '3'], [4, 5, '6'], ['7', 8, '9']]</code></td>
+<td>indexing</td>
+<td><code>a[0] = 1</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>appending</td>
+<td><code>a.append([10, 11, 12])</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>length</td>
+<td><code>len(a)</code></td>
+</tr>
+<tr>
+<td>Dictionary</td>
+<td align="left"><code>a = {'key': 'value'}</code></td>
+<td>indexing</td>
+<td><code>a['other key] = 'new value</code></td>
+</tr>
+<tr>
+<td>String</td>
+<td align="left"><code>a = 'string'</code></td>
+<td>length</td>
+<td><code>len(a)</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>position</td>
+<td><code>a[2]</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>substring</td>
+<td><code>a[1:5]</code>]</td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>concatenation</td>
+<td><code>a + ' string</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>String to Integer</td>
+<td><code>int('345')</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>String to Float</td>
+<td><code>float('123.45')</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>Integer to String</td>
+<td><code>str(345)</code></td>
+</tr>
+<tr>
+<td></td>
+<td align="left">–&gt;</td>
+<td>Float to String</td>
+<td><code>str(123.45)</code></td>
+</tr>
+</tbody>
+</table><h3 id="classes-in-python">Classes in Python</h3>
+<p>A <strong>class</strong> is a quasi-<strong>template</strong> for creating <strong>objects</strong>. Consider this example:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">class</span> <span class="token class-name">Human</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">,</span> age<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+        self<span class="token punctuation">.</span>age <span class="token operator">=</span> age
+    
+    <span class="token keyword">def</span> <span class="token function">have_birthday</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>age <span class="token operator">+=</span> <span class="token number">1</span>
+
+my_human <span class="token operator">=</span> Human<span class="token punctuation">(</span><span class="token string">'Jacob'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
+</code></pre>
+<p>This is a template for creating a human. We can use this <code>Human</code> template in order to create <strong>instances</strong> of the human with their own properties (so they can have their own names and ages). For the exam you do not need to understand the four main OOP class concepts (inheritance, etc.), neither do you need to know the syntax for defining, altering and creating an instance of a class, but you <em>do</em> need to know about classes as a data structure (even though <em>technically</em> classes are <strong>programming paradigms</strong> and not data structures)</p>
+
+ </section>
+    
+</html>

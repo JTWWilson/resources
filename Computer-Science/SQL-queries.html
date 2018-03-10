@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE Computer Science Theory</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/jtwwilson/resources">View On GitHub</a></li>
+      <li class="downloads"><a href="../index.html">Home</a></li>
+      <li class="downloads"><a href="index.html">Computer Science</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE Computer Science Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Computer Science (4512/1) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+  
+  <section>
+<h2 id="sql-queries">SQL Queries</h2>
+<h3 id="query-language-vs-qbe">Query Language vs QBE</h3>
+<p>Traditionally, database queries are made using a <strong>query language</strong> such as SQL. However, increasingly businesses are using QBE (Query By Example) setups in order to view and edit data. An example of a QBE application is Microsoft Access.</p>
+<p>In the exam, you will only be asked to write queries in SQL (under no circumstance will you be asked to use QBE). Not only do you have to be able to write your own queries, but you must be able to interpret pre-written queries and write the output from those queries.</p>
+<p>There are five different core statements that could be used: <code>CREATE</code>, <code>INSERT</code>, <code>SELECT</code>, <code>UPDATE</code> and <code>DELETE</code>, along with various other commands that can be used within these.</p>
+<p>In all the examples below, the following table will be used:</p>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th align="center">Film</th>
+<th align="center">Year</th>
+<th align="center">Director</th>
+<th align="center">RTScore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>001</td>
+<td align="center">The Way of the Dragon</td>
+<td align="center">1972</td>
+<td align="center">Bruce Lee</td>
+<td align="center">100</td>
+</tr>
+<tr>
+<td>002</td>
+<td align="center">Lone Wolf McQuade</td>
+<td align="center">1983</td>
+<td align="center">Steve Carver</td>
+<td align="center">67</td>
+</tr>
+<tr>
+<td>003</td>
+<td align="center">The Delta Force</td>
+<td align="center">1986</td>
+<td align="center">Menahem Golan</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td>004</td>
+<td align="center">The Expendables 2</td>
+<td align="center">2012</td>
+<td align="center">Simon West</td>
+<td align="center">65</td>
+</tr>
+</tbody>
+</table><h3 id="select">SELECT</h3>
+<p><code>SELECT</code> is used in order to retrieve data from a table.</p>
+<blockquote>
+<p>Get the name of every film with a Rotten Tomatoes score of more than 50</p>
+</blockquote>
+<pre class=" language-sql"><code class="prism  language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span>
+	<span class="token keyword">FROM</span> Films
+	<span class="token keyword">WHERE</span> RTScore <span class="token operator">&gt;</span> <span class="token number">50</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>Get the year of every film NOT directed by Bruce Lee in ascending order</p>
+</blockquote>
+<pre class=" language-sql"><code class="prism  language-sql"><span class="token keyword">SELECT</span> Year
+	<span class="token keyword">FROM</span> Films
+	<span class="token keyword">WHERE</span> Director <span class="token operator">&lt;&gt;</span> <span class="token string">'Bruce Lee'</span>
+	<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> Year <span class="token keyword">ASC</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="create">CREATE</h3>
+<p><code>CREATE</code> is used to create an empty table.</p>
+<blockquote>
+<p>Create the table above</p>
+</blockquote>
+<pre class=" language-sql"><code class="prism  language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Films<span class="token punctuation">(</span>
+	<span class="token keyword">Key</span> <span class="token keyword">INT</span> <span class="token keyword">IDENTITY</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+	Film <span class="token keyword">VARCHAR</span> <span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	Year <span class="token keyword">INT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	Director <span class="token keyword">VARCHAR</span> <span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	RTScore <span class="token keyword">INT</span> <span class="token boolean">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>A few points about the above statement:</p>
+<ol>
+<li><code>VARCHAR</code> refers to a string of variable length.</li>
+<li><code>INT</code> refers to any integer (whole number) value.</li>
+<li>If a line ends with <code>NOT NULL</code>, it is a compulsory field. If it ends with <code>NULL</code> then it is an optional field.</li>
+<li><code>IDENTITY</code> is used to identify the primary key for the table. It can be given a start value and an increment.</li>
+</ol>
+<h3 id="insert">INSERT</h3>
+<p><code>INSERT</code> is used to add a new record to a table. In the brackets, the fields that are to be edited are listed. Note that you do not need to fill the primary key field yourself - it is filled automatically.</p>
+<blockquote>
+<p>Add a record to the table with the film Frozen.</p>
+</blockquote>
+<pre class=" language-sql"><code class="prism  language-sql"><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> Films<span class="token punctuation">(</span>Film<span class="token punctuation">,</span>
+		  Year<span class="token punctuation">,</span>
+		  Director<span class="token punctuation">,</span>
+		  RTScore<span class="token punctuation">)</span>
+	<span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token string">'Frozen'</span><span class="token punctuation">,</span>
+	       <span class="token number">2013</span><span class="token punctuation">,</span>
+	       <span class="token string">'Mr Delport'</span><span class="token punctuation">,</span>
+	       <span class="token number">89</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="update">UPDATE</h3>
+<p><code>UPDATE</code> is used in order to amend fields in a record.</p>
+<blockquote>
+<p>Alter the director of Frozen to be ‘Jennifer Lee’</p>
+</blockquote>
+<pre class=" language-sql"><code class="prism  language-sql"><span class="token keyword">UPDATE</span> Films
+	<span class="token keyword">SET</span> Director <span class="token operator">=</span> <span class="token string">'Jennifer Lee'</span>
+	<span class="token keyword">WHERE</span> Film <span class="token operator">=</span> <span class="token string">'Frozen'</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="delete">DELETE</h3>
+<p><code>DELETE</code> is used to delete whole records from the table</p>
+<blockquote>
+<p>Delete Frozen from the table as it does not feature Chuck Norris</p>
+</blockquote>
+<pre class=" language-sql"><code class="prism  language-sql"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> Films
+	<span class="token keyword">WHERE</span> Film <span class="token operator">=</span> <span class="token string">'Frozen'</span><span class="token punctuation">;</span>
+</code></pre>
+
+  </section>
+    
+</html>
