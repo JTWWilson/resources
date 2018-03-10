@@ -816,6 +816,12 @@ dt {
 }
 
 
+
+/* =============================================================================
+   Custom Tags
+   ========================================================================== */
+
+
 .underline { 
   text-decoration: underline;
   -webkit-text-decoration-color: #A30F0F;
@@ -834,7 +840,7 @@ dt {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #6d0000;
+    background-color: #A30F0F;
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -861,7 +867,7 @@ dt {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #A30F0F transparent transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
