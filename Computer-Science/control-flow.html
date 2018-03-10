@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GCSE Computer Science Theory</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+
+  <div id="header">
+    <nav>
+      <li class="fork"><a href="https://github.com/jtwwilson/resources">View On GitHub</a></li>
+      <li class="downloads"><a href="../index.html">Home</a></li>
+      <li class="downloads"><a href="index.html">Computer Science</a></li>
+      <!--<li class="title">FEATURED</li>-->
+    </nav>
+  </div><!-- end header -->
+
+  <div class="wrapper">
+    <div id="title">
+      </br></br></br></br>
+            <h1>GCSE Computer Science Theory</h1>
+            <span class="credits left">Notes for the AQA GCSE Computer Science (4512/1) theory examination</span>
+            <span class="credits right">Content based on <a href="https://bournetocode.com/">BourneToCode</a></span>
+          </div>
+  </div>
+  
+  <section>
+
+<h2 id="control-flow">Control Flow</h2>
+<h2 id="what-is-control-flow-used-for">What is control flow used for?</h2>
+<p>Programs and algorithms alike use <strong>control flow</strong> to make decisions about the order in which to do things. There are three ways of doing this: <strong>sequence</strong>, <strong>selection</strong> and <strong>iteration</strong>.</p>
+<h3 id="sequence">Sequence</h3>
+<p>Any basic algorithm uses sequences abundantly. This runs commands one after another, step by step. For example, if I were to be making a cup of tea:</p>
+<pre class=" language-pseudocode"><code class="prism  language-pseudocode">Boil kettle
+Pour boiling water into mug
+Add teabag
+Add sugar
+Add milk
+Remove teabag
+Drink tea
+</code></pre>
+<p>Of course, the person for whom we are making this cup of tea may not want sugar in their tea. That’s where we can use selection.</p>
+<h3 id="selection">Selection</h3>
+<p>Selection allows us to make decisions in our code. The most common type is the IF… THEN… structure - also known as a <strong>conditional</strong>. In our tea example, this could look like this:</p>
+<pre class=" language-pseudocode"><code class="prism  language-pseudocode">Boil kettle
+Pour boiling water into mug
+Add teabag
+IF sugar is wanted THEN
+  Add sugar
+Add milk
+Remove teabag
+Drink tea
+</code></pre>
+<h3 id="iteration">Iteration</h3>
+<p>Of course, we may have to make cups of tea for multiple people. We can use iteration for this purpose. This involves doing a certain thing or set of things until a certain condition is met. For example:</p>
+<pre class=" language-pseudocode"><code class="prism  language-pseudocode">REPEAT
+  Boil kettle
+  Pour boiling water into mug
+  Add teabag
+  IF sugar wanted THEN
+    Add sugar
+  Add milk
+  Remove teabag
+UNTIL no more tea is needed
+</code></pre>
+<p>The example above uses the AQA REPEAT… UNTIL… syntax,  however the same could be yielded with a WHILE loop.</p>
+<h4 id="differentiating-between-the-5-types-of-loop">Differentiating between the 5 types of loop</h4>
+<p>There are 5 main types of iterating loops, each one working slightly differently:</p>
+<ul>
+<li>A <em>FOR…</em> loop runs for the number of times specified in the loop.</li>
+<li>A <em>WHILE…</em> loop runs indefinitely as long as the specified condition is met. If, when the loop is reached, the condition is already met, the code in the loop is not run at all.</li>
+<li>A <em>DO… WHILE…</em> loop runs indefinitely until the specified condition is met. The code in the loop is run at least once as the condition is not checked until the end of each ‘pass’.</li>
+<li>A <em>REPEAT… UNTIL…</em> loop runs indefinitely until the specified condition is met. The code in the loop is run at least once as the condition is not checked until the end of each ‘pass’.</li>
+<li>An <em>infinite</em> loop will run forever. This can be intentional, especially when checking user input, however is a common source of logical errors in code. Note that these cannot occur in <em>FOR…</em> loops.</li>
+</ul>
+
+</section>
+</html>
