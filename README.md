@@ -21,7 +21,7 @@ Page template:
 
   <div id="header">
     <nav>
-      <li class="fork"><a href="https://github.com/fabcooldog/resources">View On GitHub</a></li>
+      <li class="fork"><a href="https://github.com/jtwwilson/resources">View On GitHub</a></li>
       <li class="downloads"><a href="../index.html">Home</a></li>
       <li class="downloads"><a href="index.html">Computer Science</a></li>
       <!--<li class="title">FEATURED</li>-->
@@ -61,7 +61,7 @@ Page template:
 
   <div id="header">
     <nav>
-      <li class="fork"><a href="https://github.com/fabcooldog/resources">View On GitHub</a></li>
+      <li class="fork"><a href="https://github.com/jtwwilson/resources">View On GitHub</a></li>
       <li class="downloads"><a href="../index.html">Home</a></li>
       <li class="downloads"><a href="index.html">Systems and Control</a></li>
       <!--<li class="title">FEATURED</li>-->
