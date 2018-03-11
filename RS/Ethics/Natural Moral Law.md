@@ -27,10 +27,12 @@ Since these are present in all humans, it allows the Ancient Greek's work to be 
 ### Casuistry
 
 Each Basic Good allows you to use reason to create some practical laws for life, for instance:
+
 |Prohibition|Basic Good|Positive Injunction|
-|-|-|-|
+|-----------|----------|-------------------|
 |Do not kill|Life|Help others|
 |Do not use contraception|Reproduction|Try to have children|
+ 
  
  -----
  
